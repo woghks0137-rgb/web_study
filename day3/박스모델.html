@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>박스모델</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border-width: 1px;
+            /* 선의 두께 */
+            border-color: red;
+            /* 선의 색상 */
+            border-style: solid;
+            /* 선의 모양 */
+            margin: 50px;
+            /* 바깥쪽 간격 */
+            padding: 50px;
+            /* 안쪽 간격 */
+        }
+
+        .box1 {
+            border: 2px solid black;
+            /* width - style - color */
+        }
+
+        .box2 {
+            border-top: 3px solid red;
+        }
+
+        .box3 {
+            border-left: 3px dashed green;
+        }
+
+        .box4 {
+            border-right: 3px dotted purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+
+
+</body>
+
+</html>
