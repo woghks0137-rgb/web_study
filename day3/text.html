@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>텍스트 태그와 스타일</title>
+    <style>
+        strong {
+            font-weight: bold;
+            /* 기본값 */
+            color: red;
+        }
+
+        em {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: normal;
+            /* 기울임체 */
+        }
+
+        span {
+            font-size: 20px;
+            font-style: italic;
+            color: blue;
+            letter-spacing: 10px;
+            /* 글자 간격 조절 */
+        }
+
+        p {
+            /* word-spacing: 10px; */
+            /*단어 간격 조절 */
+            word-break: keep-all;
+            /* 단어가 끊어지지 않고 유지된 상태로 줄바꿈 */
+        }
+
+        p:nth-of-type(2) {
+            color: saddlebrown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <a href="https://google.com" target="_blank" title="구글로 이동">구글</a>
+    </h1>
+    <h2>소개</h2>
+    <p>
+        <strong>“석유에서 문화로(Oil to Culture)”<br></strong>
+        마포구 서울월드컵경기장 인근 매봉산에 에워싸인 <span>‘문화비축기지’</span>는 일반인의 접근과 이용이 철저히 통제됐던 산업화시대 유산인 <em>마포 석유비축기지가 도시재생을 통해</em> 시민
+        품으로 돌아오게 된 문화공원입니다.
+    </p>
+    <p>
+        1973년 석유파동 이후 76~78년에 5개 탱크를 건설해 당시 서울시민이 한 달 정도 소비할 수 있는 양인 6,907만 리터의 석유를 보관했던 마포석유비축기지는 2002년 월드컵을 앞두고 안전상의
+        이유로 폐쇄됐는데, 10년 넘게 활용방안을 찾지 못하다가 지난 2013년 시민아이디어공모를 통해 문화비축기지로의 변신을 결정했습니다.
+    </p>
+</body>
+
+</html>

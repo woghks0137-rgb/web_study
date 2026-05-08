@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>css 선택자</title>
+    <style>
+        h1:first-child {
+            background: pink;
+        }
+
+        div:nth-of-type(1) {
+            background: gray;
+        }
+
+        /* 후손 선택자 */
+        div p {
+            color: blue;
+        }
+
+        /* 직계 선택자 */
+        div>p {
+            color: red;
+        }
+
+        /* 형제 선택자(이웃선택자) */
+        div h2+p {
+            background: skyblue;
+        }
+
+        div ul li+li {
+            background: tomato;
+        }
+
+        div.selector {
+            background: gold;
+        }
+
+        /* 선택자 세분화 
+        -태그 선택자 => 1점
+        -수열 선택자 => 10점
+        -형제/직계/후손 선택자 => 1점
+        -클래스 선택자 =>10점
+        -id 선택자 => 100점
+        */
+    </style>
+</head>
+
+<body>
+    <h1>
+        선택자의 이해
+    </h1>
+    <div class="selector">
+        <h2>
+            직계와 후손 선택자
+        </h2>
+        <p>선택자는 직계 선택자와 후손 선택자가 기본인다</p>
+        <ul>
+            <li>
+                <strong>직계 선택자</strong>
+                <p>직계 선택자는 (>)로 표현하며 부모 요소 바로 다음에 오는 선택자를 말한다</p>
+                <p>후손 선택자는 공백으로 표현하며 부모 요소 다음에 오는 모든 선택자를 말한다</p>
+            </li>
+            <li>나 li</li>
+            <li>나도 li</li>
+            <li>나도오 li</li>
+
+        </ul>
+    </div>
+    <div>
+        <h2>수열선택자</h2>
+        <p>
+            <span>수열선택자</span>는 부모 요소 안에서 몇번째인지를 선택하는 선택자
+        </p>
+        <p>1</p>
+        <p>2</p>
+        <span>3</span>
+        <p>4</p>
+    </div>
+
+</body>
+
+</html>
