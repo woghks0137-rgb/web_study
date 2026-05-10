@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>조선일보</title>
+    <style>
+        /* 1. 기본 배경 및 폰트 설정 */
+        body {
+            background-color: #121212;
+            /* 전체 배경: 아주 어두운 검정 */
+            color: #dddddd;
+            /* 기본 글자색: 연한 회색 (눈 보호) */
+            margin: 0;
+            padding: 0;
+            font-family: "Malgun Gothic", sans-serif;
+        }
+
+        /* 2. 전체 레이아웃 (가운데 정렬) */
+        .all-wrap {
+            width: 700px;
+            /* 기사 너비 */
+            margin: 0 auto;
+            /* 화면 중앙으로 */
+            padding: 60px 20px;
+            /* 위아래 여백 */
+        }
+
+        /* 3. 제목 구역 디자인 */
+        .head-box {
+            border-bottom: 1px solid #333;
+            /* 아래 구분선 */
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .category-text {
+            color: #ff4d4d;
+            /* '사회부 사건일지' 빨간색 */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .main-title {
+            font-size: 36px;
+            color: white;
+            /* 제목은 완전 흰색으로 강조 */
+            line-height: 1.3;
+            margin: 0 0 20px 0;
+        }
+
+        .info-line {
+            font-size: 14px;
+            color: #888;
+            /* 기자명, 날짜는 흐리게 */
+        }
+
+        /* 4. 요약 상자 (왼쪽 빨간 선 포인트) */
+        .summary-box {
+            background-color: #1a1a1a;
+            border-left: 4px solid #ff4d4d;
+            /* 포인트 선 */
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .summary-list {
+            margin: 0;
+            padding-left: 20px;
+            line-height: 2;
+            /* 줄 간격을 넓게 해서 읽기 편하게 */
+        }
+
+        /* 5. 본문 및 이미지 구역 */
+        .content-box {
+            line-height: 1.9;
+            /* 본문 줄 간격 */
+            font-size: 17px;
+        }
+
+        .intro-text {
+            font-size: 19px;
+            font-weight: bold;
+            /* 도입부만 굵게 */
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .img-wrap {
+            margin: 40px 0;
+        }
+
+        .img-desc {
+            font-size: 14px;
+            color: #888;
+            margin-top: 10px;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+
+        /* 6. 법률 설명 구역 (회색 박스) */
+        .law-section {
+            background-color: #222;
+            /* 본문보다 살짝 밝은 배경 */
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 8px;
+            /* 모서리 둥글게 */
+        }
+
+        .law-card {
+            background-color: #2c2c2c;
+            /* 법률 카드 배경 */
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 3px solid #666;
+        }
+
+        .law-point strong {
+            color: #ff4d4d;
+            /* 속지주의, 속인주의 글자색 */
+        }
+
+        .answer {
+            color: white;
+            font-weight: bold;
+            background-color: #444;
+            /* '가능하다' 강조 배경 */
+            padding: 2px 8px;
+        }
+
+        /* 7. 소제목 및 저작권 */
+        .sub-title {
+            font-size: 24px;
+            color: white;
+            margin: 50px 0 20px 0;
+        }
+
+        .copyright-line {
+            margin-top: 60px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="head-box">
+            <p class="category-text">사회부 사건일지</p>
+            <h1 class="main-title">'수리남 황정민' 실제 모델 조봉행은 어떻게 체포됐나
+            </h1>
+
+            <div class="info-line">
+                <span>강지은 기자</span> | <span>
+                    업데이트 2026.05.06. 16:51</span>
+            </div>
+        </div>
+        <div class="summary-box">
+            <ul class="summary-list">
+                <li>[마약과의 전쟁 비화] ⑷</li>
+                <li>수리남 국적 취득 후 본격 범죄 입문
+                </li>
+                <li>영화 '집으로 가는 길' 주인공도 피해자
+                </li>
+                <li>처벌 피하려 "나는 수리남인" 주장
+                </li>
+
+            </ul>
+        </div>
+        <div class="content-box">
+            <p class="intro-text">
+                넷플릭스 시리즈 ‘수리남(2022)’의 주인공 전요환(황정민 분)의 실제 모델은 조봉행(1952~2016)이다. 조봉행은 1995년 수리남 국적을 취득한 ‘수리남인’이었다. 그는
+                2004~2005년 남미에서 유럽으로 코카인 48.5㎏을 유통하려 한 혐의로 체포됐고, 이후 2012년 대법원에서 징역 10년에 벌금 1억원을 확정받았다. 수리남인인 그를 우리 법으로
+                처벌할 수 있었던 근거가 있다. 마약거래방지법 12조다.
+
+            </p>
+            <div class="img-wrap">
+                <img src="https://www.chosun.com/resizer/v2/HDFPDJ3LUVCZDOPG2F2PFZRKLA.jpg?auth=2b3eb5afe155e58d3d4dbd7c17f57fc0f874fdb0b9d24ff24f6dab010d11e836&width=1280"
+                    width="100%">
+                <p class="img-desc">수리남의 마약상을 다룬 넷플릭스 드라마 '수리남'. 실제 범죄자 조봉행을 '전요한(황정민)'이라는 인물로 극화했다. /넷플릭스
+                </p>
+            </div>
+
+            <div class="law-section">
+                <p>우리 형법은 기본적으로 장소와 사람을 모두 고려해 죄를 묻는다.</p>
+
+                <div class="law-card">
+                    <p class="law-point">속지(屬地)주의 원칙에 따라 대한민국 영역 안에서 범죄를 저지를 경우 국적에 상관없이 우리 법을 적용한다.
+                    </p>
+                    <p>또 우리 국민이 도박이나 대마초 등이 합법화된 해외에서 범죄를 저질렀을 때 우리 법에 따라 처벌하는 속인(屬人)주의 원칙도 함께 적용한다.
+                    </p>
+                </div>
+                <p>그렇다면 해외에서 마약을 유통한 외국인을 국내 법정에 세워 처벌할 수 있을까? 가능하다.
+
+                </p>
+                <p class="law-point">마약류불법거래방지에관한특례법 제12조:돈을 벌기 위해 지속적으로 마약 수출입·제조·매매 등을 저지른 사람은 ‘대한민국 영역 밖’에서 ‘외국인’이 해당
+                    죄를 범했더라도 한국에서 처벌할 수 있도록 규정하고 있다. 마약과 내란, 외환 등 중대범죄의 경우 예외적으로 처벌하고 있는 것이다. 대부분의 국가에서는 자국으로의 마약 유통
+                    가능성이 있는 경우에만 외국인의 마약 범죄를 처벌하지만, 우리나라와 일본은 자국과의 연결성이 없을 때도 외국인 마약상을 처벌할 수 있게 돼 있다.
+                </p>
+                <h2 class="sub-title">선박 냉동기사가 수리남 마약왕으로
+                </h2>
+                <p>조봉행은 원양어선, 냉동 운반선 등 대형 선박의 냉동·냉장 설비를 유지하고 보수하는 선박 냉동기사로 먹고살았다. 10억원대 빌라 건축 사기를 벌이고 수배되자 1994년 수리남으로
+                    달아났다. 그에게 수리남은 냉동 기사 일을 하며 체류해 본 적 있는 익숙한 국가였다. 지명수배되는 바람에 한국 여권 재발급이 어렵게 되자, 그는 수리남 국적을 취득했다. 이후 생선
+                    가공 공장을 차렸고, 중국과 수리남을 오가며 어업 회사에 싸게 제공되는 면세유를 받아 밀매한 것으로 알려져 있다.
+
+                </p>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+
+</html>
