@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>box model css의 이해</title>
+    <style>
+        div {
+            width: 400px;
+            border: 1px solid black;
+            /* 선의 두께 모양 색상 */
+        }
+
+        .box1 {
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .box2 {
+            margin-left: 40px;
+            margin-bottom: 40px;
+        }
+
+        .box3 {
+            margin-top: 80px;
+        }
+
+        .box4 {
+            margin-top: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga dolor, commodi ducimus beatae
+        exercitationem. Perspiciatis beatae quae corrupti dolorem temporibus officiis ratione. Sint laboriosam
+        inventore, libero ipsam recusandae quis.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, itaque! Reprehenderit, ullam
+        qui
+        eaque molestiae temporibus voluptates similique magni nulla obcaecati maxime, rerum molestias minima repudiandae
+        at earum nobis sint.
+    </div>
+    <div class="box3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Amet, itaque! Reprehenderit, ullam
+        qui
+        eaque molestiae temporibus voluptates similique magni nulla obcaecati maxime, rerum molestias minima repudiandae
+        at earum nobis sint.
+    </div>
+    <style>
+        em {
+            padding: 20px;
+            background: gold;
+        }
+
+        span {
+            padding: 20px;
+            background: pink;
+        }
+
+        .box4 p:nth-child(2) {
+            padding: 10px;
+            background: gold;
+            margin-bottom: 50px;
+        }
+    </style>
+    <div class="box4">
+        <p>Lorem ipsum <span>dolor</span> sit amet <em> consectetur</em>, adipisicing elit. </p>
+        <p>Amet, itaque! Reprehenderit, ullam qui
+            eaque molestiae temporibus voluptates <span>similique </span>magni nulla obcaecati maxime, rerum molestias
+            minima
+            repudiandae
+            at earum nobis sint.</p>
+    </div>
+    <style>
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background: gray;
+        }
+
+        .box5 img {
+            width: 100%;
+        }
+    </style>
+    <div class="box5">
+        <img src="https://item.kakaocdn.net/do/9ac8ba2dd82efb5cad54d5c7451167a14022de826f725e10df604bf1b9725cfd"
+            alt="어피치">
+    </div>
+    <style>
+        .text a {
+            background: red;
+            padding: 15px;
+        }
+
+        .text span {
+            padding: 10px;
+            background: green;
+            margin-top: -20px;
+
+        }
+    </style>
+    <p class="text">
+        <a href="#">바로 구매하기</a>
+        <span>사이트로 이동합니다.</span>
+
+
+    </p>
+
+</body>
+
+</html>
