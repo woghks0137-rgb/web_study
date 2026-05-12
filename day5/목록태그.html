@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록태그</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <img src="https://picsum.photos/300/200" alt="">
+            <h3>제목</h3>
+            <p>설명글</p>
+        </li>
+        <li>
+            <img src="https://picsum.photos/300/200" alt="">
+            <h3>제목</h3>
+            <p>설명글</p>
+        </li>
+    </ul>
+    <ul class="nav">
+        <li>
+            <a href="#">회사소개</a>
+            <ul class="submenu" type="square">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">프로그램</a>
+            <ul class="submenu">
+                <li><a href="#">반응형 웹</a></li>
+                <li><a href="#">프론트 개발</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ol>
+        <li>
+            <h3>순서목록</h3>
+        </li>
+        <li>HTML/CSS
+            <ol type="a" start="5">
+                <li>웹 기본 구조</li>
+                <li>css를 통한 디자인 심미성 표현</li>
+                <li>안정적인 레이아웃으로 디바이스에 대응</li>
+            </ol>
+        </li>
+        <li>javascript</li>
+        <li>react</li>
+    </ol>
+    <style>
+        a {
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .outline {
+            display: inline-block;
+            /* width가 선언되면 
+            1.margin으로 박스를 가운데 이동할지 말지
+            2.text-align으로 텍스트가 정렬할지 말지*/
+            width: 240px;
+            height: 50px;
+            border: 2px solid skyblue;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .solid {
+            padding: 10px 20px;
+            background: skyblue;
+            color: black;
+            /* 배경색에 따라서 텍스트 색상 선언 */
+            border-radius: 40px;
+            /* 모서리의 둥글기(곡률) */
+        }
+    </style>
+
+    <a href="" class="outline">BUY NOW (지금 구매하기)</a>
+    <a href="" class="solid">BUY NOW (지금 구매하기)</a>
+    <a href="" class="border">BUY NOW</a>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>배경속성</title>
+    <style>
+        html {
+            height: 3000px;
+        }
+
+        body {
+            height: 100%;
+            background-color: lightcoral;
+            background-image: url(img/dog.png);
+            background-repeat: no-repeat;
+            background-position: left 80% top 400px;
+            background-attachment: fixed;
+            background-size: 200px auto;
+        }
+
+        .box1 {
+            background-color: purple;
+            background-image: url(img/dog.png);
+            background-position: right center;
+            background-size: 240px auto;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 760px;
+            margin: auto;
+        }
+
+        .box2 {
+            width: 600px;
+            height: 200px;
+            background: white;
+            margin: 50px auto;
+            /* 상하 좌우 */
+            padding: 20px;
+            /* 상하좌우 모두 동일한 20px 적용 */
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        최초충전 금액 및 단위: 모바일 카드 5,000원~500,000원, 실물 카드 10,000원~500,000원
+    </div>
+    <div class="box2"> 나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다나는
+        박스다나는 박스다나는 박스다나는 박스다나는 박스다나는 박스다</div>
+
+</body>
+
+</html>
