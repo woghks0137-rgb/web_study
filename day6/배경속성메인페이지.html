@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행의 즐거움</title>
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <style>
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            color: #efefef;
+        }
+
+        /*  * = (전체선택자 - uni  versal selector) -> body에 있는 모든 요소들을 선택한다 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-visual {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-position: center;
+            /* 이미지의 위치를 가운데로 옮겨준다 */
+            background-repeat: no-repeat;
+            /* 반복되는 이미지를 없애준다 */
+            background-size: cover;
+            /* 화면 넓이의 맞게 이미지를 가져오고 높이는 알아서 조절한다 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 글래스 효과 */
+        .glass-box {
+            width: 620px;
+            padding: 60px 50px;
+            text-align: center;
+
+            background-color: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 30px;
+            /* 모서리의 곡률 */
+            /* 테두리를 둥글게 만든다 */
+            /* 아이크모포비아 증상이 있는 사람들이 있어서 자주 사용함 */
+            /* 너무 사각형으로 이루어져 있으면 날카로운 느낌이 많이 나서 사용한다 */
+            backdrop-filter: blur(8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            /* 그림자에 X축 , Y축 , 번지는 정도 , 그림자의 색을 나타낸다 */
+        }
+
+        /* 제목 */
+        .sub-title {
+            margin-bottom: 20px;
+            font-size: 16px;
+            letter-spacing: 5px;
+            font-weight: 500;
+        }
+
+        .glass-box h1 {
+            margin-bottom: 26px;
+            font-size: 46px;
+            line-height: 1.2;
+            word-break: keep-all;
+            /* 단어가 끊어지지 않고 줄 바꿈되는 속성 */
+        }
+
+        .glass-box .main-text {
+            font-size: 18px;
+            line-height: 1.8;
+            /* 줄의 높낮이 */
+            word-break: keep-all;
+            /* 단어가 끊어지지 않고 줄 바꿈되는 속성 */
+            margin-bottom: 30px;
+        }
+
+        .glass-box .btn {
+            text-decoration: none;
+            /* 글씨를 꾸며주는 것들은 없앤다 */
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            /* 글씨의 투명도 */
+            padding: 16px 32px;
+            /* 상하 좌우 */
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+
+            transition: all 0.3s;
+        }
+
+        .glass-box a:hover {
+            border-color: #392017;
+            /* 줄 색상 */
+            color: #392017;
+            /* 글씨 색상 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-visual">
+        <div class="glass-box">
+            <p class="sub-title">healing journey</p>
+            <h1>쉼이 필요한 순간, <br> 여행이 시작됩니다.</h1>
+            <p class="main-text">
+                파도소리,숲의 향기, 따스한 햇살이 함께하는 여행. <br>
+                지금 당신에게 필요한 건 나를 위한 작은 쉼표입니다.
+            </p>
+            <a href="#" class="btn">힐링 여행 떠나기</a>
+        </div>
+    </div>
+</body>
+
+</html>

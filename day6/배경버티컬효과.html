@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 버티컬</title>
+    <style>
+        @font-face {
+            font-family: 'Cafe24Gowoonbam';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'Cafe24Gowoonbam';
+        }
+
+        .bg {
+            height: 100vh;
+            /* 한 화면에서 보이는 높이가 정도가 100vh */
+            padding: 200px 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+
+        }
+
+        .bg>div {
+            background-color: white;
+            height: 640px;
+            width: 1280px;
+            margin: auto;
+            /* BG라는 큰 타이틀로 묶어서 CSS값을 입력하고
+            BG BG1,2,3,4라는 작은 타이틀 안에 각각 다른 내용을 넣어 텍스트를 최소하하기 */
+        }
+
+        .bg.bg1 {
+            background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .bg.bg2 {
+            background-image: url(https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .bg.bg3 {
+            background-image: url(https://plus.unsplash.com/premium_photo-1682629632657-4ac307921295?q=80&w=726&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .bg.bg4 {
+            background-image: url(https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg bg1">
+        <div>
+            <h2>자연속에서 쉬다</h2>
+        </div>
+    </div>
+    <div class="bg bg2">
+        <div>
+            <h2>해변에서 즐기는 여름 휴가</h2>
+        </div>
+    </div>
+    <div class="bg bg3">
+        <div>
+            <h2>파도 소리와 눈부시게 빛나는 태양</h2>
+        </div>
+    </div>
+    <div class="bg bg4">
+        <div>
+            <h2>나를 위한 힐링 여행~여름 휴가</h2>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

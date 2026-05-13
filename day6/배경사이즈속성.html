@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경사이즈</title>
+    <style>
+        div {
+            height: 600px;
+            margin: 100px;
+            background: gray;
+        }
+
+        .origin {
+            background-image: url(https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1800px 100%;
+            /* width height 경우의 따라서 px단위나 %단위로 조절 가능 */
+        }
+
+        /* cover는 요소의 가로 기준으로 이미지가 채워지고 높이는 비율에 맞춰서 채워짐 */
+        .cover {
+            background-image: url(https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+            /* 요소의 넓이 중심으로 채워지고 높이는 자동으로 조절된다 */
+        }
+
+        /* contain 속성은 요소의 세로 기준으로 배경 이미지가 채워짐 */
+        .contain {
+            background-image: url(https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            /* 높이 기준으로 화면이 채워짐 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="origin"></div>
+    <div class="cover"></div>
+    <div class="contain"></div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경속성</title>
+    <style>
+        html {
+            /* height: 100%; */
+        }
+
+        body {
+            background-image: linear-gradient(#EB0000, #95008A, #3300FC);
+            /* to reft,right로 색 방향을 정할 수 있음 */
+            background-repeat: no-repeat;
+            /* 반복여부 */
+            height: 460px;
+            background-attachment: fixed;
+            /* 배경고정 */
+        }
+
+        /* background는 말 그대로 배경에 들어가는 이미지를 사용할때 쓰고 img를 직접 쓰는 경우는 사진이 하나의 컨텐츠로 사용되거나 사진 깨져도 그 사진이 무엇인지를 나타낼 수 있게끔 할 때 */
+
+        /* background는 디자인에 역할이 크다 */
+        .wrap {
+            width: 760px;
+            height: 100%;
+            /* 부모가 물려주는 값이 있어야 적용 가능 */
+            margin: 0 auto;
+            background-image: url(../day5/img/dog.png);
+            background-color: white;
+            background-repeat: no-repeat;
+            /* 반복여부 */
+            background-position: left 100px bottom;
+            /* left,right PX 값으로 지정 가능 */
+            background-size: 160px;
+        }
+
+        li {
+            margin-left: -30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: palevioletred;
+            padding: 10px 10px 10px 25px;
+            /* 상 우 좌 하 순으로 적용 (시계방향) */
+            background-image: url(img/별.png);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 0 10px;
+            list-style: none;
+            /* UL,Li 에 존재하는 기본적인 스타일 동그라미를 지워준다 */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>배경속성</h1>
+        <ul>
+            <li>
+                배경은 콘텐츠가 아니라 디자인의 의미로 사용한다.</li>
+            <li>
+                배경이미지를 목록 기호의 디자인으로 활용을 많이 한다.
+            </li>
+            <li>배경이미지는 반응형 웹에서도 중요한 역할을 한다</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
