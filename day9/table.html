@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 태그</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-top: 3px solid green;
+            border-collapse: collapse;
+            /* 셀간의 간격을 없애는 속성 */
+            margin: 50px;
+        }
+        thead, tfoot {
+            background: #efefef;
+        }
+        th,
+        td {
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>공원사용 문의</caption>
+        <thead>
+            <tr>
+                <th>문의내용</th>
+                <th>문의전화</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">장소사용(T1~T6)</td>
+                <td>02-508-2205</td>            
+            </tr>
+            <tr>
+                
+                <td>02-2133-0425</td>
+            </tr>
+            <tr>
+                <td>해설투어</td>
+                <td>02-376-9340</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">기타제안 및 문의 culturetank@naver.com</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>시설명	공간용도</th>
+                <th>공간용도</th>
+                <th>단가기준</th>
+                <th>비고</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">T0</td>
+                <td>문화마당</td>
+                <td>일반거주지역</td>
+                <td rowspan="2">서울시 공유재산 및 물품관리조례 22조 및 제26조에 따라 적용</td>
+            </tr>
+            <tr>
+                <td>나무데크</td>
+                <td>일반거주지역</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">시설명</th>
+                <th rowspan="2">공간용도</th>
+                <th rowspan="2">사용면적</th>
+                <th colspan="2">금액(원)</th>
+                <th rowspan="2">비고</th>
+            </tr>
+            <tr>
+                <th>기본금액</th>
+                <th>추가금액</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>사진‧영상 <br>촬영녹화</td>
+                <td>야외공간</td>
+                <td>-</td>
+                <td>13,000원(1시간)</td>
+                <td>초과시간당 50%할인</td>
+                <td>○ 영리행위에 한함. 다만, 홍보 및 마케팅 목적으로 필요하다고 시장이 판단하는 경우 면제 가능</td>
+            </tr>			
+        </tbody>
+    </table>
+</body>
+
+</html>

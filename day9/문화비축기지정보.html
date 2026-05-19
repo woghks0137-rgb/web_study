@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문화비축기지 공원 정보</title>
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 모든 요소들이 가지고 있는 여백을 없애줌. */
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            background-color: #e5e5e5;
+        }
+
+        .contents {
+            width: 1100px;
+            margin: 30px auto;
+        }
+
+        .oper-hour {
+
+            background: #fff;
+            padding: 40px 50px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-left: 5px solid #2ca311;
+            font-size: 26px;
+            font-weight: 600;
+            padding-left: 15px;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+
+        .oper-hour dl>div {
+            margin-bottom: 30px;
+        }
+
+        .oper-hour dl dt {
+            color: #2ca311;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .access-info, .movie-info {
+            background: #fff;
+            padding: 40px 50px;
+        }
+        .access-info dl div {
+            padding: 25px 20px 25px 100px;
+            background: url(img/subicon.png) no-repeat left center;
+        }
+        .access-info dl div:last-child {
+            background-image: url(img/busicon.png);
+        }
+        .access-info dt {
+            font-size: 18px;
+            color: #2ca311;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .access-info dd {
+            color: #555;
+        }
+        .access-info dd p {
+            margin-bottom: 5px;
+        }
+        .access-info dd p:nth-child(even) {
+            margin-bottom: 20px;
+        }
+        .movie-info ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        .movie-info ul li::before {
+            display: inline-block;
+            width: 6px; height: 6px;
+            margin-right: 10px;
+            background: #5f42e0;
+            border-radius: 50%;
+            vertical-align: 4px; /* 바로 옆의 인라인요소 와의 높이정렬*/
+            content: ''
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contents">
+        <div class="oper-hour">
+            <h2>운영시간</h2>
+            <dl>
+                <div>
+                    <dt>야외공원</dt>
+                    <dd>24시간 개방(연중무휴)</dd>
+                </div>
+                <div>
+                    <dt>탱크 T1~T6</dt>
+                    <dd>
+                        2025년 4월부터 사용수익허가시설로 변경됨에 따라 탱크 내부 상시 관람이 불가합니다.
+                        <span>
+                            ※이용문의 : 02-508-2205 ㈜더문엔터테인먼트
+                        </span>
+                    </dd>
+                </div>
+                <div>
+                    <dt>카페 Tank6</dt>
+                    <dd>운영중(연중무휴)</dd>
+                </div>
+            </dl>
+        </div>
+        <div class="access-info">
+            <h2>교통안내</h2>
+            <dl>
+                <div>
+                    <dt>지하철</dt>
+                    <dd>6호선 월드컵경기장역 2·3번 출구에서 도보 10분</dd>
+                </div>
+                <div>
+                    <dt>버스</dt>
+                    <dd>
+                        <p>월드컵경기장서측.문화비축기지 정류장</p>
+                        <p>- 571, 710, 760, 6715, 7019, 7715, 9711</p>
+                        <p>
+                            월드컵공원입구.문화비축기지입구 정류장
+                        </p>
+                        <p>
+                            - 271, 6715, 7011, 7019, 7715, 8777, 마포08
+                        </p>
+                    </dd>
+                </div>
+            </dl>
+        </div>
+        <div class="movie-info">
+            <h2>촬영안내</h2>
+            <ul>
+                <li>
+                    사전에 협의 또는 검토되지 않은 촬영의 경우</li>
+                <li>문화비축기지를 이용하는 시민들의 불편을 야기시키는 촬영의 경우</li>
+                <li>문화비축기지 문화공원의 운영방향에 적합하지 않은 촬영의 경우</li>
+                <li>자연재해 등의 부득이한 사유가 발행할 경우</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

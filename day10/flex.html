@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .layout {
+            display: flex;
+            width: 1280px;
+            background: blue;
+            justify-content: flex-end;
+            /* 가로축 기준 */
+            gap: 25px;
+        }
+
+        .layout img {
+            width: 300px;
+        }
+
+        .layout p {
+            width: 500px;
+            height: 300px;
+            background: gold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="layout">
+        <img src="img/samyang.png" alt="">
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo nihil natus sunt doloribus beatae
+            nam facere iste? At dolorum autem, similique ipsa illum enim beatae ab perspiciatis cumque optio.
+        </p>
+    </div>
+    <style>
+        .main-img {
+            height: 640px;
+            background: url(https://images.unsplash.com/photo-1779071267081-3b4d5d884388?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* 자식 요소들이 세로로 배치된다. */
+            /* flex는 부모한테 주고 자식을 가로 배치에서 새로 배치로 바꾸고 싶으면 디렉션 값을 준다  */
+        }
+
+        h1,
+        p {
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 56px;
+        }
+    </style>
+    <div class="main-img">
+        <h1>flex를 알면 사이트가 자유로워진다</h1>
+        <p>레이아웃을 내 맘대로 할 수 있다.</p>
+    </div>
+</body>
+
+</html>

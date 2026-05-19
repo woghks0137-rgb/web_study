@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신라스테이</title>
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            background-color: #e5e5e5;
+        }
+
+        .contents {
+            width: 500px;
+            margin: 30px auto;
+            /* 상하 좌우 */
+            background: #fff;
+            padding: 40px 50px;
+            /* 상하보다 좌우에 값을 더 많이 */
+        }
+
+        .contents h2 {
+            display: inline-block;
+            background: #c29c74;
+            color: #fff;
+            font-weight: 600;
+            /* text-align: center; */
+            /* text-align은 디스플레이 형태가 block일때만 가능하다 */
+            padding: 10px 12px;
+            border-radius: 0px 15px 0 0;
+            /* 모서리를 둥글게 만든다 */
+            /* top right bottom left */
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            border-top: 1px solid blue;
+            border-bottom: 2px solid blue;
+            border-collapse: collapse;
+            /* 셀(선)간의 간격을 없애줍니다. */
+            margin-bottom: 30px;
+        }
+
+        table caption {
+            /* caption을 사용하면 기본적으로 글씨가 중앙으로 온다 */
+            /* 텍스트 블라인드 기법으로 텍스트를 화면에 숨기되
+            스크린 리더 프로그램에서는 내용을 읽혀지도록 해야함. */
+            font-size: 0;
+            /* 글자크기 0 */
+            line-height: 0;
+            /* 행간(글자간격) 0 */
+            height: 0;
+            /* 높이 0 */
+            overflow: hidden;
+            /* 부모 요소보다 자식 요소가 클 경우 부모요소 기준으로 숨김 */
+        }
+
+        /* th,
+        td {
+            border: 1px solid black;
+        } */
+        tr {
+            border-bottom: 1px solid blue;
+        }
+
+        th {
+            width: 15%;
+            font-weight: 500;
+            border-right: 1px solid blue;
+            background: skyblue;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        table tr:nth-child(2) td:nth-child(2) {
+            border-right: 1px solid blue;
+        }
+
+        table td span {
+            display: block;
+        }
+
+        table td ul li {
+            padding-top: 10px;
+        }
+
+        table td ul li::before {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background: blue;
+            border-radius: 100%;
+            /* 정원 */
+            margin-right: 10px;
+            content: '';
+            vertical-align: 4px;
+        }
+
+        .add-info {
+            margin-bottom: 40px;
+        }
+
+        .add-info li {
+            padding: 5px 0;
+            letter-spacing: -1px;
+        }
+
+        .add-info li::before {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background: blue;
+            margin-right: 10px;
+            vertical-align: 4px;
+            content: '';
+            font-size: 15px;
+            font-weight: 300;
+
+        }
+
+        .btn-area {
+            text-align: center;
+        }
+
+        .btn-area a {
+            /*  padding: 8px 20px; */
+            /* display: inline-block; */
+            display: block;
+            width: 180px;
+            height: 44px;
+            background: blue;
+            color: #fff;
+            font-weight: 500;
+            margin: auto;
+            line-height: 44px;
+            /* 높이와 행간에 값을 동일하게 선언하면 
+            텍스트가 높이 기준 가운데 정렬이 됨 height = line-height  */
+        }
+
+        .pic {
+            height: 320px;
+            background: url(img/samyang.png) no-repeat center/cover;
+            margin-bottom: 25px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contents">
+        <h2>돌잔치 이용안내</h2>
+        <figure class="pic"></figure>
+        <table>
+            <caption>신라스테이 돌잔치 이용안내</caption>
+            <tr>
+                <th>혜택</th>
+                <td colspan="2">
+                    <ul>
+                        <li>전체 대관진행</li>
+                        <li>
+                            호텔 내 사진 촬영 가능 및 객실 대여
+                            <span>✨(행사 1시간 전부터 4시간 사용 가능)</span>
+                        </li>
+                        <li>외부돌상 반입 무료</li>
+                        <li>돌잔치 전문 브랜드 '코세그룹'의 전문 사회자,성장동영상 등 상품 이용시 제휴가 할인 혜택 제공 <span>📌코세그룹 대표번호 : 1599-7105</span>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="2">가격</th>
+                <td>대관뷔페</td>
+                <td>
+                    <span>성인 65,000원 / 75.000원 </span>
+                    <span>어린이 35,000원</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">보증 인원 60명 이상 시 이용 가능</td>
+            </tr>
+        </table>
+        <ul class="add-info">
+            <li>상기 금액은10%의 부가치세가 포함된 가격입니다.</li>
+            <li>사전 문의 및 예약을 해주신 고객님에 한하여 상기 혜택을 적용받으실 수 있습니다.</li>
+            <li>상기 혜택은 변경될 수 있습니다.</li>
+            <li>상기 이미지는 실제와 다를 수 있습니다.</li>
+        </ul>
+        <div class="btn-area">
+            <a href="#">예약페이지로 이동</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
