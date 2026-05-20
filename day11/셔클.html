@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셔클</title>
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+        }
+
+        /* 공통 */
+        /* 공통은 제일 위에서 선언해야 그 아래 내용들 수정 했을때 문제가 안 생김 */
+        section {
+            padding: 125px 0;
+
+        }
+
+        .inner {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .blind {
+            font-size: 0;
+            height: 0;
+            line-height: 0;
+            overflow: hidden;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            padding: 25px 80px;
+
+            display: flex;
+            justify-content: space-between;
+            /* 부모의 너비 양쪽 끝에 자식요소가 배치 */
+            align-items: center;
+        }
+
+        header .logo>a {
+            display: block;
+            width: 180px;
+            background: red;
+        }
+
+        header .logo>a>img {
+            width: 100%;
+            display: block;
+        }
+
+        header .gnb>ul {
+            display: flex;
+            gap: 50px;
+        }
+
+        header .gnb>ul>li>a {
+            display: block;
+            padding: 5px 10px;
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+
+        header .gnb .lang {
+            padding: 6px 14px;
+            border-radius: 20px;
+            background: #111;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .main-img {
+            height: 620px;
+            background: url(https://images.unsplash.com/photo-1571779181091-c014b57dc198?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center/cover;
+            /* 부모요소 기준으로 자식요소를 정가운데 배치한다. */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+        }
+
+        .main-img>p {
+            font-size: 44px;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* intro */
+        #intro {
+            background: #d2d2d2;
+
+        }
+
+        #intro .title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        #intro .text {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        #intro figure {
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+            /* align-items: center; */
+        }
+
+        #intro figure img {
+            width: 295px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="logo">
+                <a href="#"><img src="img/logo.webp" alt="shycle 로고">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="">홈</a></li>
+                    <li><a href="">솔루션</a></li>
+                    <li><a href="">기술</a></li>
+                    <li><a href="">도입사례</a></li>
+                    <li><a href="">이용자 앱</a></li>
+                    <li><a href="">스토리</a></li>
+                    <li><a href="" class="lang">EN</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <!-- header -->
+        <section class="main-img">
+            <p>
+                지속가능한 도시를 위한<br>
+                통합모빌리티 플랫폼, 셔클
+            </p>
+        </section>
+        <!-- //main-image -->
+        <section id="intro">
+            <div class="inner">
+                <h2 class="blind">현대 자동차 모빌리티 플래폼 소개</h2>
+                <p class="title">셔클은 현대자동차의 통합 모빌리티 플랫폼으로,</p>
+                <p class="text">AI 기술을 활용한 다양한 모빌리티 솔루션을 제공하여 지역의 교통 문제를 해결하고<br>
+                    모든 사람이 제약없이 자유롭게 이동하는 도시를 만듭니다.</p>
+
+                <figure>
+                    <figcaption class="blind">모빌리티 사례 이미지</figcaption>
+                    <img src="https://images.unsplash.com/photo-1513171920216-2640b288471b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxpdHl8ZW58MHwxfDB8fHww"
+                        alt="">
+                    <img src="https://images.unsplash.com/photo-1671654197396-e42aa1b1539a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fG1vYmlsaXR5fGVufDB8MXwwfHx8MA%3D%3D"
+                        alt="">
+                    <img src="https://images.unsplash.com/photo-1615506236937-446d39d6cbce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fG1vYmlsaXR5fGVufDB8MXwwfHx8MA%3D%3D"
+                        alt="">
+                    <img src="https://images.unsplash.com/photo-1684922129294-32ec903c0535?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fG1vYmlsaXR5fGVufDB8MXwwfHx8MA%3D%3D"
+                        alt="">
+                </figure>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
