@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: lightblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 80px;
+        }
+
+        .gnb {
+            justify-content: space-between;
+            display: flex;
+            background: green;
+            gap: 30px;
+        }
+
+        .gnb a {
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>TRAVEL</h1>
+        <ul class="gnb">
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">tour</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+        <style>
+            .main {
+                height: 400px;
+                background: linear-gradient(lightpink, lightblue);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card-wrap {
+                display: flex;
+                gap: 30px;
+                justify-content: space-between;
+                width: 1280px;
+                margin: 0 auto;
+                padding: 100px 0;
+            }
+
+            .card-wrap .card {
+                width: calc((100% - 60px) /3);
+            }
+
+            .card-wrap .card img {
+                width: 100%;
+            }
+        </style>
+    </header>
+
+    <div class="main">
+        <h2>FLEX의 이해와 활용</h2>
+    </div>
+
+    <div class="card-wrap">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1744910129159-13e2beac4c5b?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+
+            <div class="text">
+                <h2>모빌리티 플랫폼</h2>
+                <p>일상 속 오토바이</p>
+            </div>
+
+        </div>
+        <d iv class="card">
+            <img src="https://images.unsplash.com/photo-1679896230078-b99bd7305d3f?q=80&w=693&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+
+            <div class="text">
+                <h2>모빌리티 플랫폼</h2>
+                <p>일상 속 지하철</p>
+            </div>
+
+        </d>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1643961149595-b2455e6bc0d4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+
+            <div class="text">
+                <h2>모빌리티 플랫폼</h2>
+                <p>일상 속 지하철역</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
