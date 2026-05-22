@@ -1,0 +1,66 @@
+@import url(fonts.css);
+
+/* reset(초기화) */
+html,
+body,
+head,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+address,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+section,
+article,
+nav,
+figure,
+figcaption,
+aside,
+footer,
+table,
+thead,
+tbody,
+th,
+td,
+tr,
+caption {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    border-collapse: border;
+    /* 셀 사이의 간격을 없애는 속성 */
+}
+
+.blind {
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    /* 텍스트 블라인드 */
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
