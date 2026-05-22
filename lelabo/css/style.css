@@ -1,0 +1,151 @@
+@import url(fonts.css);
+
+/* reset(초기화) */
+html,
+body,
+head,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+address,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+section,
+article,
+nav,
+figure,
+figcaption,
+aside,
+footer,
+table,
+thead,
+tbody,
+th,
+td,
+tr,
+caption {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    border-collapse: border;
+    /* 셀 사이의 간격을 없애는 속성 */
+}
+
+.blind {
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    /* 텍스트 블라인드 */
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+.wrap {
+    width: 1280px;
+    margin: 50px auto;
+    height: 1200px;
+
+}
+
+.categori {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 150px 200px 150px;
+
+}
+
+.top-container {
+    height: 500px;
+    background: url(../img/main_bg.png) no-repeat center/cover
+}
+
+h1 {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.categori ul {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    gap: 40px;
+}
+
+.sub-text {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sub-text02 {
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.middle-container {
+    background: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 200px 100px 200px;
+}
+
+.middle-container img {
+
+    width: 400px;
+}
+
+.text-box03 {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.text-box03 h2 {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.text-box03 p {
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.shop {
+    background: #706863;
+    border-radius: 15px;
+    color: #fff;
+    padding: 13px 17px;
+    margin: 20px 0 0 120px;
+    display: inline-block;
+}
