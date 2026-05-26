@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>툴팁</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 100px;
+        }
+
+        .box {
+            width: 200px;
+        }
+
+        .btn {
+            background: black;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .tooltip {
+            background: tomato;
+            color: white;
+            padding: 15px;
+            display: none;
+        }
+
+        .box:hover>.tooltip {
+            display: block;
+            /* 화면에서 보임 */
+        }
+
+        .lang {
+            width: 150px;
+            border: 1px solid #ddd;
+            margin: 100px;
+        }
+
+        .lang>a {
+            display: block;
+            background: #222;
+            color: white;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            text-decoration: none;
+
+        }
+
+        .lang>ul {
+            list-style: none;
+            display: none;
+        }
+
+        .lang>ul a {
+            display: block;
+            padding: 6px;
+            background: #f5f5f5;
+            border-top: 1px solid #ddd;
+            color: #333;
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .lang:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="btn">마우스를 올려보세요</div>
+        <div class="tooltip">
+            display 속성으로 만든 예제입니다.
+        </div>
+    </div>
+    <div class="lang">
+        <a href="">언어선택</a>
+        <ul>
+            <li><a href="">KOR</a></li>
+            <li><a href="">ENG</a></li>
+            <li><a href="">JP</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
