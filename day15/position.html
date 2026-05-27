@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 50px;
+            background: gray;
+            z-index: 10;
+        }
+
+        .box>div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            margin: 20px;
+        }
+
+        .box.static {
+            position: static;
+            top: 20px;
+            left: 20px;
+
+        }
+
+        .box.relative {
+            position: relative;
+            top: -200px;
+            left: 200px;
+            background: gold;
+        }
+
+        .relative .abs {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        /* 부모기준 */
+
+        .relative .fixed {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+
+        /* 윈도우기준 */
+    </style>
+</head>
+
+
+<!-- position -->
+
+<!-- stacic은 기본 속성 (포지션 속성을 초기화)위치 값 적용 안됨 -->
+
+<!-- relative는 그 자리에서 포지션이 붕 뜨지만 그 자리값은 가지고 있다 
+    relative는 자리값을 가지고 있기 때문에 자리를 이동 시키면 이동시킨 값과 원래 가지고 있던 값을 둘다 가져가서 그 위치값이 합쳐진다.
+    (예를 들면 width값이 900일떄 200을 옆으로 밀면 화면에 들어간 총 값은 1100) -->
+
+
+<!-- absolute는 그 자리에서 포지션이 붕 뜨고 그 자리값 마저 같이 뜨기 떄문에 다른 박스들이 그자리로 모여든다 -->
+
+<!-- fixed는 화면 그 자체에 고정되기 떄문에  -->
+
+<body>
+    <div class="box stactic">
+        static
+    </div>
+    <div class="box relative">
+        relative
+        <div class="abs">
+            absolute
+        </div>
+        <div class="fixed">
+            fixed
+        </div>
+    </div>
+    <style>
+        .box1,
+        .box2,
+        .box3 {
+            width: 150px;
+            height: 150px;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box1 {
+            background: red;
+            z-index: 3;
+        }
+
+        .box2 {
+            background: blue;
+            z-index: 2;
+            top: 50px;
+            left: 50px;
+        }
+
+        .box3 {
+            background: green;
+            top: 100px;
+            left: 100px;
+            z-index: 100;
+        }
+    </style>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+
+    <style>
+        .relative-menu {
+            width: 600px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .block,
+        .block2 {
+            width: 600px;
+            border: 1px solid blue;
+            margin: 20px;
+        }
+
+        .block {
+            position: absolute;
+        }
+
+        .block2 {
+            position: fixed;
+        }
+    </style>
+    <div class="relative-menu">
+        <div>home</div>
+        <div>sevice</div>
+        <div>program</div>
+    </div>
+    <div class="block">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id rem vel accusantium amet alias aspernatur dolor
+        eius repellendus? Harum ipsa laborum dicta quasi? Provident harum suscipit autem itaque, ipsa quod.
+    </div>
+    <div class="block2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur mollitia quaerat accusamus! Nesciunt sit
+        magni asperiores officiis excepturi voluptate minima, fugiat repudiandae veniam aliquam incidunt eum. Adipisci
+        impedit modi recusandae.
+    </div>
+</body>
+
+</html>
