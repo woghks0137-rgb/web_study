@@ -69,8 +69,6 @@ body {
 .wrap {
     width: 1280px;
     margin: 50px auto;
-    height: 1200px;
-
 }
 
 .categori {
@@ -141,6 +139,10 @@ h1 {
     font-size: 18px;
 }
 
+.bottom-container {
+    margin-bottom: 50px;
+}
+
 .shop {
     background: #706863;
     border-radius: 15px;
@@ -179,7 +181,7 @@ h1 {
 .name {
     display: block;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 900;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
@@ -198,14 +200,47 @@ h1 {
     color: #fff;
     padding: 10px 45px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 800;
     border-radius: 4px;
-    margin-top: 15px;
-
+    margin-top: auto;
 }
 
 h3 {
     text-align: center;
-    margin: 30px 0 30px 0;
+    margin: 50px 0 50px 0;
+    font-weight: 900;
+}
+
+.last-container {
+    background-color: #dbdbdb;
+    padding: 30px 10px;
+}
+
+.last-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.refill-title {
+    font-size: 16px;
+    font-weight: 800;
+    padding-right: 30px;
+    margin-left: 150px;
+}
+
+.refill-list {
+    font-size: 10px;
+    line-height: 1.6;
+    font-weight: 800;
+    list-style-position: inside;
+    margin-right: 150px;
+
+}
+
+.menu-title {
     font-weight: 900;
 }
