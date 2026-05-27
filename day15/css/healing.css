@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* section */
+section {
+    padding: 120px 0;
+}
+
+.inner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+.btn {
+    padding: 12px 36px;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Cafe24Gowoonbam';
+}
+
+/* header */
+header {
+    padding: 30px 0;
+
+    position: absolute;
+
+    width: 100%;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo>a {
+    font-family: 'Cafe24Gowoonbam';
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+header .gnb ul {
+    display: flex;
+    gap: 40px;
+}
+
+header .gnb ul a {
+    font-family: 'Cafe24Gowoonbam';
+    font-size: 20px;
+    color: #fff;
+    padding: 8px;
+}
+
+/* main-visual */
+#main-visual {
+    height: 860px;
+    background: url(../img/main_bg.png) no-repeat center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text .title {
+    font-family: 'Cafe24Gowoonbam';
+    font-size: 54px;
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+.main-text .sub-title {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    opacity: 0.75;
+}
+
+/* 소개 */
+#about-area {
+    background: #ede3d7;
+}
+
+#about-area .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-area .pic {
+    width: 52%;
+    height: 100%;
+}
+
+#about-area .pic img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#about-area .about-text {
+    width: 48%;
+    padding-left: 100px;
+}
+
+#about-area .about-text .title {
+    font-family: 'Cafe24Gowoonbam';
+    color: #554545;
+    font-size: 36px;
+    margin-bottom: 36px;
+}
+
+#about-area .about-text .sub-text {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#about-text .btn-area {
+    margin-top: 60px;
+}
+
+#about-area .btn-area .btn-start {
+    background: #3c6d30;
+    color: #fff;
+}
+
+/* 프로그램 소개 */
+#program-area h2 {
+    font-size: 44px;
+    margin-bottom: 40px;
+    color: #3a3a3a;
+    font-weight: normal;
+    text-align: center;
+}
+
+.program-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.program-list .pic {
+    margin-bottom: 20px;
+}
+
+.program-list h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.program-list .text {
+    margin-bottom: 15px;
+}
+
+.program-list .tag {
+    font-size: 14px;
+    color: #3c6d30;
+    margin-bottom: 45px;
+}
+
+.program-list .btn-area {
+    text-align: center;
+}
+
+.program-list .btn-area>.btn-view {
+    background: #226b35;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #3a3a3a;
+}
+
+footer .copyright {
+    font-size: 15px;
+    color: #eee;
+}
