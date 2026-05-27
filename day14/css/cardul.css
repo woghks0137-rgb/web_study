@@ -64,3 +64,15 @@ body {
     font-size: 18px;
     color: #3f0d3a;
 }
+
+.card-wrap .text-group .desc {
+    line-height: 1.5;
+
+    display: -webkit-box;
+    /* webkit 기반의 박스 레이아웃 -여러줄 제한이 가능한 박스로 설정하는 속성- */
+    -webkit-line-clamp: 2;
+    /* 보여줄 라인 수 */
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
