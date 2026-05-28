@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(fonts.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    height: 2000px;
+}
+
+#wrap {
+    max-width: 1552px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.program h2 {
+    font-size: 54px;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.program span {
+    color: #005eff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.card-list img {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-list a {
+    width: 294px;
+}
+
+.card-list span {
+    color: #005eff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.catagori {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catagori>img {
+    width: 9%;
+    height: 9%;
+    padding-top: 5px;
+}
+
+.card-list h2 {
+    font-size: 16px;
+    color: #262b32;
+    border-top: 1px solid #222222;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.card-list p {
+    font-size: 16px;
+    color: #adb6bd;
+    margin-top: 7px;
+    font-weight: 600;
+}
