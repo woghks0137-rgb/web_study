@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    height: 2000px;
+}
+
+#wrap {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 25px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    margin-bottom: 40px;
+}
+
+header .logo a {
+    font-weight: 700;
+    font-size: 36px;
+
+}
+
+header .gnb {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+header .gnb a {
+    position: relative;
+    font-weight: 600;
+    font-size: 26px;
+    color: #cccc;
+    letter-spacing: -1px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+header .gnb a:hover,
+header .gnb .on a {
+    color: #000;
+    /*   */
+}
+
+header .gnb a::before,
+header .gnb .on a::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #000;
+    transition: all 0.3s;
+    content: "";
+}
+
+header .gnb a:hover::before,
+header .gnb .on a::before {
+    width: 100%;
+}
+
+/* section */
+section article {
+    padding: 60px 0 30px;
+}
+
+section h2 {
+    font-weight: 600;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+section .text {
+    line-height: 1.5;
+}
+
+section img {
+    margin-bottom: 40px;
+}
+
+/* intro */
+.intro-area .title {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.overview table {
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.overview th,
+td {
+    border-top: 1px solid #cdcdcd;
+}
+
+.overview th {
+    width: 15%;
+    background: #efefef;
+    color: #000;
+    font-weight: 500;
+}
+
+.overview td p {
+    margin-bottom: 5px;
+}
+
+.overview td li {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.overview td li::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 4px;
+    height: 1px;
+    background: #7d7d7d;
+    content: "";
+
+}
+
+.tag-area {
+    padding: 40px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.tag-area span {
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.skill div {
+    margin-bottom: 40px;
+}
+
+.skill dt {
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
+.skill dt::before {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    border-radius: 50%;
+    background: #313131;
+    width: 5px;
+    height: 5px;
+    content: "";
+}
+
+.skill dd {
+    line-height: 1.6;
+}
