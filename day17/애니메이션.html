@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이것저것 </title>
+    <style>
+        body {}
+
+        div {
+            width: 500px;
+            height: 300px;
+            background: #cdcdcd;
+        }
+
+        .text-1 {
+            opacity: 0.5;
+            /* 자식요소들까지 불투명도가 동일하게 적용 */
+        }
+
+        .text-2 {
+            background: rgba(205, 205, 205, 0.5);
+            /* 선언된 요소만 적용 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, libero qui excepturi suscipit sequi
+            aspernatur sit dolor velit pariatur at quisquam fuga, vel commodi ducimus dolore magni nam perferendis
+            dolores!</p>
+    </div>
+    <div class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem eius perferendis
+        laboriosam obcaecati at error accusamus. Autem illo, molestiae ea atque quis nesciunt minima sapiente error ex
+        incidunt perspiciatis.</div>
+
+    <style>
+        .gnb {
+            max-width: 640px;
+            margin: 50px auto;
+            border-radius: 15px;
+            border: 1px solid #cdcdcd;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .gnb li {
+            list-style-type: none;
+        }
+
+        .gnb a {
+            text-decoration: none;
+            color: inherit;
+            padding: 15px;
+            display: block;
+        }
+
+        /* UI의 사용성 */
+        .gnb a:hover {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <ul class="gnb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="">고객센터</a></li>
+    </ul>
+
+    <style>
+        .card {
+            width: 300px;
+            padding: 30px;
+            background: #fff;
+            border-radius: 20px;
+            transition: 0.4s;
+            /*   box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1); */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+
+    <div class="card">
+        <h3>힐링 프로그램</h3>
+        <p>몸과 마음을 위한 휴식</p>
+    </div>
+
+    <style>
+        .btn-area {
+            background: none;
+            margin: 50px 0;
+        }
+
+        .btn-area a {
+            text-decoration: none;
+            align-items: center;
+            display: inline-flex;
+            gap: 15px;
+            color: #222;
+        }
+
+        .btn-area span {
+            transition: 0.3s;
+        }
+
+        .btn:hover span {
+            transform: translateX(8px);
+        }
+    </style>
+    <!-- 버튼 hover시 화살표 아이콘 이동 -->
+    <div class="btn-area">
+        <a href="#" class="btn">자세히보기 <span>+</span></a>
+    </div>
+    <style>
+        .glow-box {
+            width: 600px;
+            height: 250px;
+            background: blue;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .glow-box::before {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: #ff8a65;
+
+            filter: blur(80px);
+
+            animation: moveGlow 3s linear infinite;
+            content: '';
+        }
+
+        /* transition은 마우스 이벤트가 있어야 동작을 함  */
+        /* animation은 다른 무언가 개입하지 않아도 혼자 동작을 함 
+        animation : animation-name / time / 가속함수 / 반복횟수 */
+
+        @keyframes moveGlow {
+            0% {
+                left: 0;
+                top: 0;
+            }
+
+            50% {
+                left: 300px;
+                top: 50px;
+            }
+
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+
+    <!-- blur -->
+    <div class="glow-box">
+        content
+    </div>
+
+    <style>
+        body {
+            background: url(https://images.unsplash.com/photo-1779890306846-ad651833f050?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8) center/cover;
+        }
+
+        .glass {
+            width: 300px;
+            padding: 40px;
+
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(1px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+        }
+    </style>
+
+    <!-- backdrop Blur Glass Effect -->
+    <div class="glass">
+        glass ui
+    </div>
+</body>
+
+</html>
