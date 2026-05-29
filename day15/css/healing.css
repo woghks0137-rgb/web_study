@@ -64,10 +64,26 @@ header .gnb ul {
 }
 
 header .gnb ul a {
+    position: relative;
     font-family: 'Cafe24Gowoonbam';
     font-size: 20px;
     color: #fff;
     padding: 8px;
+}
+
+header .gnb ul a::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    content: '';
+    transition: 0.3s;
+}
+
+header .gnb ul a:hover::before {
+    width: 100%;
 }
 
 /* main-visual */
@@ -142,6 +158,16 @@ header .gnb ul a {
 #about-area .btn-area .btn-start {
     background: #3c6d30;
     color: #fff;
+    transition: 0.4s;
+    border: 1px solid transparent;
+    /* transparent는 테두리를 투명하게 처리해서 안 보인게 한다.  */
+}
+
+#about-area .btn-area .btn-start:hover {
+    background: #fff;
+    color: #226b35;
+    border: 1px solid #226b35;
+
 }
 
 /* 프로그램 소개 */
@@ -160,14 +186,52 @@ header .gnb ul a {
 }
 
 .program-list .pic {
+    position: relative;
     margin-bottom: 20px;
+}
+
+.program-list .pic span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px 6px;
+    border-radius: 0 0 6px 0;
+    background: rgba(190, 70, 14, 0.911);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+
+
+.program-list .title-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.program-list .title-group span {
+    position: relative;
 }
 
 .program-list h3 {
     font-weight: 500;
     font-size: 20px;
-    margin-bottom: 15px;
+    color: #111;
+
 }
+
+.program-list .title-group span::before {
+    position: absolute;
+    left: -10px;
+    top: 3px;
+    width: 1px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    content: '';
+
+}
+
+
 
 .program-list .text {
     margin-bottom: 15px;
@@ -184,6 +248,7 @@ header .gnb ul a {
 }
 
 .program-list .btn-area>.btn-view {
+    position: relative;
     background: #226b35;
     color: #fff;
 }
