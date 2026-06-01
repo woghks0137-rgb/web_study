@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+    background: #dadada;
+}
+
+header {
+    background: #fff;
+}
+
+.gnb {
+    display: flex;
+    justify-content: center;
+}
+
+.gnb>li {
+    width: 180px;
+    position: relative;
+}
+
+.gnb>li>a {
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    background: #000000;
+    color: #fff;
+}
+
+/* 2depth */
+.depth2 {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    display: none;
+}
+
+.depth2 li a {
+    display: block;
+    padding: 15px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.depth2 li a:hover {
+    background: #349f6f;
+    color: #fff;
+}
+
+/* 마우스가 밖으로 나가도 사라지지않게 부모요소한테 hover값 주기 */
+.gnb>li:hover .depth2 {
+    display: block;
+}
