@@ -1,0 +1,170 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(fonts.css);
+
+#wrap {
+    width: 1216px;
+    margin: 50px auto;
+}
+
+#wrap h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+#wrap img {
+    max-width: 100%;
+}
+
+.about-menu {
+    display: flex;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+
+.about-menu>li {
+    width: 180px;
+}
+
+.about-menu a {
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.about-menu .on a {
+    position: relative;
+    color: #ea0519;
+}
+
+.about-menu .on a::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #ea0519;
+    content: '';
+}
+
+.contents {
+    padding: 80px 0 30px;
+}
+
+.contents .title strong {
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contents .text {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #696969;
+    margin-bottom: 80px;
+}
+
+.contents .movie {
+    height: 640px;
+    margin-bottom: 80px;
+}
+
+.contents iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contents>img {
+    margin-bottom: 80px;
+}
+
+/* 현장 */
+.charter {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.charter h3 {
+    font-size: 30px;
+    font-weight: 500;
+    width: 40%;
+}
+
+.charter .text-group .text {
+    margin-bottom: 25px;
+}
+
+.charter .text-group ul {
+    margin-left: 20px;
+}
+
+.charter .text-group ul li {
+    font-size: 17px;
+    list-style-type: decimal;
+    color: #696969;
+    line-height: 1.6;
+}
+
+/* 더 알아보기 */
+.more-list {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.learn-more h3 {
+    font-size: 30px;
+    font-weight: 500;
+    width: 40%;
+    margin-bottom: 40px;
+}
+
+.more-list .more-card {
+    position: relative;
+}
+
+.more-list .more-card figure {
+    overflow: hidden;
+    height: 240px;
+    border-radius: 15px;
+    background: red;
+    margin-bottom: 20px;
+}
+
+.more-list .more-card figure img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.more-card .more-text h4 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #ea0519;
+}
+
+.more-card .more-text p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    word-break: keep-all;
+    margin-bottom: 25px;
+}
+
+.more-card .cate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: #696969;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 8px;
+}
