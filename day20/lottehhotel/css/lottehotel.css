@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(fonts.css);
+
+#wrap {
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+#wrap h2 {
+    font-size: 38px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tab-menu {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.tab-menu>a {
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #cdcdcd;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+}
+
+.tab-contents {
+    border-top: 2px solid black;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.tab-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    border-top: 1px solid #cdcdcd;
+}
+
+.tab-cont .pic {
+    width: 45%;
+}
+
+.tab-cont .pic img {
+    width: 100%;
+    filter: grayscale(1) saturate(1);
+    transition: 0.5s;
+}
+
+.tab-cont .pic:hover img {
+    filter: grayscale(0) saturate(1.5);
+}
+
+.tab-cont .tab-text {
+    width: 50%;
+}
+
+.tab-text .label-group {
+    margin-bottom: 20px;
+}
+
+.tab-text .label-group span {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.tab-text .title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.tab-text .text {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.tab-text dl>div {
+    display: flex;
+    padding: 10px 0;
+}
+
+.tab-text dl dt {
+    position: relative;
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+
+}
+
+.tab-text dl dd {
+    padding-left: 15px;
+}
+
+.tab-text dl dd::before {
+    display: inline-block;
+    content: '';
+    background: #dddddd;
+    width: 1px;
+    height: 13px;
+    margin-right: 25px;
+}
