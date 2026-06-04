@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국의집</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.4.0/xeicon.min.css">
+
+    <link rel="stylesheet" href="css/korea-house.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#">
+                        <span class="blind">한국의 집</span>
+                    </a>
+                </h1>
+                <div class="search-area">
+                    <input type="text" placeholder="검색어를 입력해주세요." title="검색어 입력">
+                    <button class="btn-search">
+                        <img src="img/search.png" alt="검색">
+                    </button>
+                </div>
+
+                <div class="sns-area">
+                    <a href="#"><img src="img/imgi_2_ico_sns_kakao.png" alt="카카오톡"></a>
+                    <a href="#"><img src="img/imgi_3_ico_sns_insta.png" alt="인스타그램"></a>
+                </div>
+                <div class="lang-area">
+                    <a href="#">Language</a>
+                    <ul>
+                        <li>
+                            <a href="#">Korean</a>
+                        </li>
+                        <li>
+                            <a href="#">English</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <nav id="gnb">
+            <a href="#" class="btn-mobile">
+                <i class="xi-bars"></i>
+            </a>
+            <ul>
+                <li><a href="#">한식</a></li>
+                <li><a href="#">고호재</a></li>
+                <li><a href="#">혼례</a></li>
+                <li><a href="#">교육</a></li>
+                <li><a href="#">공원</a></li>
+                <li><a href="#">대관</a></li>
+                <li><a href="#">알림마당</a></li>
+            </ul>
+            <div class="util-nav">
+                <a href="#">예약문의</a>
+                <a href="#">주요사이트</a>
+            </div>
+        </nav>
+    </div>
+    <!-- //nav -->
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/main-slide01.jpg" alt="고호재 다과를 일상에서도 만나보세요 ,포장삼품 출시">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main-slide02.png" alt="한국의집 조리서-조응, 계절이 청하고 한식이 답하다 발간/판매문의처 02-3011-9223">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main-slide03.png" alt="궁중음식 다이닝 매주 화~토 운영,예약 캐치테이블 유선예약,문의 02-3011-9200">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main-slide04.png" alt="고호재 한국의 집 소화당 예약 캐치테이블 유선예약,문의 02-3011-9200">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main-slide05.png" alt="206 한식 아카데미 한국의 집 취선관, 네이버 예약,문의 한국의집 02-3011-9200">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

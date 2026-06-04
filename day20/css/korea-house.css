@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+
+/* 공통요소 */
+.inner {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Reperipoint';
+    font-size: 35px;
+    color: #000;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+/* header */
+#header {
+    height: 100px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+#header .inner {
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.logo>a {
+    display: block;
+    width: 240px;
+    height: 42px;
+    background: url(../img/imgi_1_logo.png) no-repeat left center/contain;
+}
+
+.search-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-area input[type='text'] {
+    height: 40px;
+    border-radius: 40px;
+    width: 320px;
+    border: 2px solid #c77777;
+    padding-left: 15px;
+}
+
+.search-area .btn-search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    /* 뒷배경을 투명하게 만든다 */
+}
+
+.sns-area {
+    position: absolute;
+    top: 50%;
+    right: 180px;
+    transform: translateY(-50%);
+}
+
+.sns-area a {
+    position: relative;
+    top: 0;
+    transition: 0.3s;
+}
+
+.sns-area a:hover {
+    top: -8px;
+}
+
+.lang-area {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* 부모의 높이가 선언되어 있지 않으면 자식요소의 위치를 정할때
+flex align-item:center , position top 이런 용어가 적용안됨 */
+.lang-area>a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #cacaca;
+    font-size: 14px;
+    color: black;
+}
+
+.lang-area>ul {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #111;
+    display: none;
+}
+
+.lang-area:hover ul {
+    display: block;
+}
+
+.lang-area>ul a {
+    padding: 3px;
+    font-size: 14px;
+
+}
