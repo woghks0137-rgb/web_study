@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+header .gnb .depth1 .on {
+    padding: 28px 15px;
+    background: skyblue;
+    color: aliceblue;
+}
+
+/* sub-visual */
+#sub-visual {
+    background: linear-gradient(135deg, #59CDE9 0%, #0A2A88 100%);
+}
+
+#sub-visual .visual-inner {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+#sub-visual .visual-text {
+    flex: 1;
+}
+
+#sub-visual .inner .visual-text .small-title {
+    color: #fff;
+}
+
+#sub-visual .inner .visual-text .sub-title {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #ffffffd7;
+    margin-bottom: 50px;
+    width: 85%;
+    word-break: keep-all;
+}
+
+.btn-area {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-area .btn {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 40px;
+    font-weight: 700;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.btn-area .btn-main {
+    background: rgba(141, 208, 235, 0.678);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn-area .btn-sub {
+    border: 1px solid skyblue;
+    color: skyblue;
+
+}
+
+/* 버튼 사용성 */
+.btn-main:hover,
+.reserve-btn:hover {
+    background: skyblue;
+    transform: translateY(-8px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn-sub:hover {
+    background: skyblue;
+    color: #fff;
+    transform: translateY(-8px);
+}
+
+.visual-img {
+    flex: 1;
+    border-radius: 36px;
+    overflow: hidden;
+    animation: fadeup 1s ease forwards;
+}
+
+.visual-img img {
+    height: 620px;
+    object-fit: cover;
+    transition: 0.7s;
+}
+
+/* 이미지 애니메이션 */
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-list li {
+    width: 33%;
+    background: #dddaf08c;
+    padding-bottom: 100px
+}
+
+.menu-list .img-box img {
+    overflow: hidden;
+    height: 250px;
+
+}
