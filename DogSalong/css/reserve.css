@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+#sub-visual .inner .title-area {
+    text-align: center;
+}
+
+#sub-visual .inner .title-area .small-title {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#sub-visual .inner .title-area h2 {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    font-weight: 700;
+}
+
+#sub-visual .inner .title-area .sub-title {
+    font-size: 18px;
+    margin-top: -20px;
+    font-weight: 600;
+}
