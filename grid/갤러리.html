@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .contents {
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 240px;
+            /* 행의 높이를 맞춤 */
+            gap: 20px;
+        }
+
+        .grid .item {
+            position: relative;
+            background: no-repeat center/cover;
+        }
+
+        .grid .item:nth-child(1) {
+            background-image: url(https://images.unsplash.com/photo-1771740700854-dcb3162873a6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .grid .item:nth-child(2) {
+            background-image: url(https://media.istockphoto.com/id/613865874/ko/%EC%82%AC%EC%A7%84/%EB%8F%99%EC%A0%88%EA%B8%B0%EC%9D%98-%ED%92%8D%EA%B2%BD-%EC%83%81%EB%B6%80%ED%98%95-%EC%82%B0.webp?a=1&b=1&s=612x612&w=0&k=20&c=V2eFuc8MhFEc5XHoD1Kmvzeu8f16m4uHPONOtMUqdGc=);
+        }
+
+        .grid .item:nth-child(3) {
+            background-image: url(https://media.istockphoto.com/id/1289010593/ko/%EC%82%AC%EC%A7%84/%EB%88%88%EC%9D%B4-%EB%8D%AE%EC%9D%B8-%EB%86%80%EB%9D%BC%EC%9A%B4-%EA%B2%A8%EC%9A%B8-%ED%8C%8C%EB%85%B8%EB%9D%BC%EB%A7%88-%ED%98%B8%ED%8C%8C%EC%B8%A0-%EC%98%AC%EA%B0%80%EC%9A%B0-%EC%95%8C%ED%94%84%EC%8A%A4%EC%9D%98-%ED%81%AC%EB%A1%9C%ED%85%90%EC%BD%94%ED%94%84-%EB%B0%94%EC%9D%B4%EC%97%90%EB%A5%B8-%EB%8F%85%EC%9D%BC.webp?a=1&b=1&s=612x612&w=0&k=20&c=PlagxjDBEu6SjSQujrKZ8EG10ZGH2LdP-iLpBO542ls=);
+        }
+
+        .grid .item.item-big {
+            grid-row: span 2;
+        }
+
+        .grid .item span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.253);
+            color: #fff;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contents">
+        <div class="grid">
+            <div class="item item-big">
+                <span>사진 1</span>
+            </div>
+            <div class="item">
+                <span>사진 2</span>
+            </div>
+            <div class="item">
+                <span>사진 3</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

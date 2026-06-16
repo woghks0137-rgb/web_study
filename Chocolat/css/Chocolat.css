@@ -1,0 +1,346 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(fonts.css);
+
+body {
+    background: #fff5e5;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 150px 0;
+}
+
+/* header */
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-family: 'Ria';
+    color: rgb(78, 37, 8);
+    margin-right: 80px;
+}
+
+.gnb .depth1 {
+    display: flex;
+    gap: 75px;
+    margin-right: 200px;
+    font-weight: 800;
+}
+
+/* util */
+.header-inner .util {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.header-inner .util>a {
+    font-size: 15px;
+}
+
+.header-inner .util>.btn-reserve {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: rgb(78, 37, 8);
+    color: #fcfcfc;
+}
+
+#sub-visual {
+    background: linear-gradient(rgba(255, 245, 229, 0.25), rgba(255, 245, 229, 0.25)),
+        url(https://plus.unsplash.com/premium_photo-1675237626067-f57f628f76f7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center / cover;
+}
+
+#sub-visual .inner {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    flex: 1;
+}
+
+#sub-visual .visual-text {
+    width: 50%;
+}
+
+#sub-visual .visual-img {
+    width: 40%;
+    overflow: hidden;
+    height: 600px;
+    border-radius: 20px;
+}
+
+#sub-visual .small-title {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#sub-visual h2 {
+    color: rgb(63, 29, 4);
+    font-size: 44px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#sub-visual .sub-title {
+    color: #ffffffb9;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.btn-area {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-area .btn-main {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 40px;
+    border: solid 1px #fff;
+    font-weight: 700;
+    transition: 0.3s;
+    background: rgb(78, 37, 8);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.btn-area .btn-main:hover {
+    transition: 0.4s;
+    transform: translateY(-10px);
+
+}
+
+.btn-area .btn-sub {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 40px;
+    font-weight: 700;
+    transition: 0.3s;
+    background: rgb(83, 43, 15);
+    color: #fff;
+}
+
+.btn-area .btn-sub:hover {
+    transition: 0.4s;
+    transform: translateY(-10px);
+
+}
+
+/* visual */
+#content {
+    background: rgba(156, 116, 88, 0.555);
+}
+
+#content .inner {
+    margin-top: -50px;
+}
+
+#content .menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    gap: 40px;
+}
+
+#content .title-area {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#content .title-area h2 {
+    font-size: 38px;
+    color: rgb(78, 37, 8);
+    margin-bottom: 15px;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    font-weight: 800;
+}
+
+#content .title-area p {
+    font-size: 18px;
+    color: rgb(78, 37, 8);
+}
+
+.menu-list li {
+    width: 33%;
+    background: #baaca072;
+    padding-bottom: 100px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.menu-list .img-box {
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.menu-list li:hover {
+    transition: 0.4s;
+    transform: translateY(-25px);
+}
+
+.menu-list .img-box img {
+    overflow: hidden;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+}
+
+.menu-list .text-box {
+    padding: 15px 20px;
+    text-align: left center;
+    position: relative;
+}
+
+.menu-list .text-box .text {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.menu-list .text-box p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-menu {
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 12px 24px;
+    background: rgba(231, 231, 231, 0.616);
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.btn-menu:hover {
+    background: rgba(78, 37, 8, 0.708);
+    color: #fff;
+}
+
+.btn-menu ion-icon {
+    vertical-align: -4px;
+    font-size: 20px;
+}
+
+.menu-list li:hover .btn-menu {
+    transition: 0.4s ease;
+    opacity: 1;
+}
+
+.menu-list li:hover img {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* //content */
+#point {
+    background: rgba(78, 37, 8, 0.708);
+}
+
+#point .info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.info .img-box img {
+    width: 90%;
+    border-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.info .img-box {
+    animation: img-box 2s infinite ease-in-out;
+}
+
+@keyframes img-box {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.text-group {
+    width: 50%;
+}
+
+.text-group .text {
+    font-size: 18px;
+    color: rgba(71, 31, 3, 0.897);
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.text-group h2 {
+    font-size: 38px;
+    color: rgb(43, 18, 1);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.text-group .point-list li {
+    margin-bottom: 40px;
+}
+
+.text-group .point-list h3 {
+    color: rgb(82, 36, 3);
+    margin-bottom: 18px;
+}
+
+.text-group .point-list p {
+    margin-top: -10px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.39);
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+/* footer */
+footer {
+    padding: 30px 0;
+    background: rgba(71, 31, 3, 0.897);
+    font-size: 14px;
+    color: #ffffff87;
+    text-align: center;
+
+}

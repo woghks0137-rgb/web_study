@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+#sub-visual {
+    height: 400px;
+    background: linear-gradient(rgba(63, 50, 36, 0.209), rgba(86, 51, 14, 0.362)), url("https://images.unsplash.com/photo-1597633425046-08f5110420b5?q=80&w=1170&auto=format&fit=crop") no-repeat top 50% center/cover;
+
+}
+
 #sub-visual .inner .title-area {
     text-align: center;
 }
@@ -14,10 +20,151 @@
 #sub-visual .inner .title-area h2 {
     font-family: "Pretendard Variable", Pretendard, sans-serif;
     font-weight: 700;
+    color: #fff;
+    font-size: 36px;
 }
 
 #sub-visual .inner .title-area .sub-title {
     font-size: 18px;
     margin-top: -20px;
     font-weight: 600;
+    color: #fff;
+}
+
+/* form */
+#sec-reserve .inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+
+#sec-reserve .reserve-info {
+    width: 40%;
+    padding: 40px;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(30, 50, 30, 0.08);
+}
+
+.reserve-info h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.reserve-info.text {
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.reserve-info .use-info li {
+    padding: 14px;
+    border-bottom: 1px solid #f1ded0;
+    font-size: 18px;
+}
+
+.reserve-info .use-info li strong {
+    font-weight: 500;
+    color: #111;
+}
+
+#sec-reserve .reserve-form {
+    width: 60%;
+    padding: 40px;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(30, 50, 30, 0.08);
+}
+
+.reserve-info .sub-title {
+    color: skyblue;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.reserve-form fieldset {
+    border: none;
+}
+
+.reserve-form legend {
+    font-size: 0;
+}
+
+.reserve-form .fom-row {
+    margin-bottom: 20px;
+}
+
+.reserve-form .form-row label,
+.reserve-form .form-row .label-title {
+    display: block;
+    /* label - diplay : inline */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.reserve-form input,
+.reserve-form select,
+.reserve-form textarea {
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    border-radius: 12px;
+    border: 1px solid #ead7c8;
+    font-size: 16px;
+    background: #fffdf9;
+}
+
+.reserve-form .radio-group {
+    display: flex;
+    gap: 18px;
+    flex: wrap;
+    /* 부모영역이 부족할 떄 자식요소가 줄 바꿈 */
+}
+
+.radio-group label,
+.argee-box label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.radio-group input,
+.argee-box input {
+    width: 18px;
+    height: 18px;
+    vertical-align: -4px;
+}
+
+.reserve-form textarea {
+    height: 150px;
+    padding: 16px;
+    resize: none;
+}
+
+.argee-box {
+    margin: 30px 0;
+    padding: 18px;
+    border-radius: 14px;
+    background-color: #fff7ec;
+}
+
+.reserve-form button {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 30px;
+    color: #fff;
+    background: skyblue;
+    font-size-adjust: 18px;
+    font-weight: 800;
+}
+
+/* footer */
+footer {
+    padding: 40px;
+    text-align: center;
+    background: skyblue;
 }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드로 칸 합치기</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            border: 1px solid black;
+        }
+
+        .grid>div {
+            border: 1px solid blue;
+            padding: 40px;
+        }
+
+        .grid>.hero {
+            grid-column: span 3;
+            background: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="hero">메인배너</div>
+        <div>카드1</div>
+        <div>카드2</div>
+        <div>카드3</div>
+        <div>카드4</div>
+    </div>
+    <style>
+        .grid {
+            margin: 100px;
+        }
+
+        .grid>div {
+            padding: 50px;
+            background: lightgray;
+        }
+
+        .grid .best {
+            grid-column: span 2;
+            background: lightpink;
+        }
+
+        .grid div:nth-child(3) {
+            margin: 100px;
+        }
+    </style>
+    <div class="grid">
+        <div class="best">Best 상품</div>
+        <div>상품2</div>
+        <div>상품3</div>
+        <div>상품4</div>
+        <div>상품5</div>
+    </div>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .gallery div {
+            background: pink;
+            min-height: 120px;
+        }
+
+        .main {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+    <div class="gallery">
+        <div class="main">대표사진</div>
+        <div>사진2</div>
+        <div>사진3</div>
+        <div>사진4</div>
+        <div>사진5</div>
+    </div>
+    <style>
+        .notice-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-items: center;
+            /* 가로정렬 */
+            align-items: center;
+            /* 세로정렬 */
+        }
+
+        .notice-grid>div {
+            background: #ddd;
+            padding: 40px;
+            height: 200px;
+        }
+
+        .notice-grid .notice {
+            grid-row: span 2;
+        }
+    </style>
+    <div class="notice-grid">
+        <div class="notice">공지사항</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

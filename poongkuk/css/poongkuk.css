@@ -117,6 +117,7 @@ nav>a+a {
     width: 40%;
     color: #fff;
     text-align: center;
+    margin: 0 auto;
 }
 
 .main-title span {
@@ -269,4 +270,102 @@ nav>a+a {
     bottom: 60px;
     left: 20px;
     transition: 0.3s;
+}
+
+#day {
+    background: #f0dfc3 url(../img/img_5h.jpg) no-repeat left center / 50%;
+}
+
+#day .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+#day .day-text::after {
+    background: #000;
+}
+
+.main-title .btn.btnGoBrand::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    content: '';
+}
+
+.main-title .btn.btnGoBrand:hover::before {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.main-title .btn.btnGoBrand span {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-weight: 400;
+}
+
+.main-title .btn.btnGoBrand span:hover {
+    color: black;
+    font-weight: 500;
+}
+
+/* //withyou  */
+#withyou {
+    background: url(../img/bg_store.png), url(../img/bg_store2.png0);
+    background: no-repeat;
+    background-position: left -100px top, left 70% center;
+}
+
+#withyou .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* 영역이오른쪽으로 오도록 */
+    text-align: center;
+}
+
+#withyou .main-title::after {
+    background: #000;
+}
+
+#withyou .with-text .text span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#withyou .with-text .btn.btnstore {
+    position: relative;
+    border-color: #111;
+}
+
+#withyou .with-text .btn.btnstore::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000000;
+    content: '';
+    transition: 0.3s;
+}
+
+#withyou .wit-text .btn.btnstore:hover {
+    color: #fff
+}
+
+#withyou .with-text .btn.btnstore:hover::before {
+    width: 100%;
+}
+
+#withyou .with-text .btn.btnstore span {
+    position: relative;
+    z-index: 2;
 }
