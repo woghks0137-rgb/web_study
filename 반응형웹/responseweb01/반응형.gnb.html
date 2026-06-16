@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 gnb</title>
+    <link rel="stylesheet" href="/Chocolat/css/reset.css">
+    <style>
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+        }
+
+        .menu-btn {
+            display: none;
+        }
+
+        @media screen and (max-width:600px) {
+            .menu-btn {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">☰</div>
+        <nav>
+            <ul>
+                <li>홈</li>
+                <li>소개</li>
+                <li>서비스</li>
+                <li>문의</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디바이스에 반응하는 테스트</title>
+    <link rel="stylesheet" href="/Chocolat/css/reset.css">
+    <style>
+        body {
+            height: 100vh;
+            background: #8a4cc4;
+            display: grid;
+            place-items: center;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .tablet,
+        .mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 1024px) {
+            body {
+                background: rgba(128, 192, 132, 0.826);
+            }
+
+            .web {
+                display: none;
+            }
+
+            .tablet {
+                display: block;
+                font-size: 50px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            body {
+                background: rgba(245, 166, 150, 0.826);
+            }
+
+            .web {
+                display: none;
+            }
+
+            .tablet {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="web">나는 Web</h1>
+    <h1 class="tablet">나는 Tablet</h1>
+    <h1 class="mobile">나는 Mobile</h1>
+</body>
+
+</html>
