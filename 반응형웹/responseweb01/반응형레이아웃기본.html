@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 레이아웃 기본</title>
+    <link rel="stylesheet" href="/Chocolat/css/reset.css">
+    <style>
+        .wrap {
+            max-width: 100%;
+            margin: 20px auto;
+        }
+
+        header,
+        section,
+        aside,
+        footer {
+            border: 1px solid #ccc;
+            padding: 1.25rem;
+            font-size: 1.25rem;
+            /* font-size 16px(브라우저 기본 설정값) */
+            /* 1.25rem = 20px */
+            text-align: center;
+            margin-bottom: 1.25rem;
+        }
+
+        header {
+            height: 12vh;
+        }
+
+        footer {
+            height: 6vh;
+        }
+
+        section {
+            width: 100vw;
+            height: 50vh;
+        }
+
+        aside {
+            width: 100vw;
+            height: 20vh;
+        }
+
+        @media screen and (min-width:1024px) {
+            .wrap {
+                max-width: 80vw;
+            }
+
+            .main {
+                display: flex;
+                justify-content: space-between;
+                gap: 3vw;
+            }
+
+            aside {
+                width: 27vw;
+            }
+
+            section {
+                width: 70vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>HEADER</header>
+        <main>
+            <aside>ASIDE</aside>
+            <section>SECTION</section>
+        </main>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+
+</html>
