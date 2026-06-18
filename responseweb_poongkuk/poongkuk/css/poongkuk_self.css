@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+    font-family: 'Aritaburi';
+}
+
+
+/* main-visual */
+#main-visual {
+    height: 100vh;
+    background: url(../img/bg_brand.jpg) center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 부모의 height가 있어야 자식요소가 높이기준 가운데 정렬이 됨  */
+}
+#main-visual .main-title {
+    width: 40%;
+    color: #fff;
+    text-align: center;
+}
+.main-title span {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    display: block;
+}

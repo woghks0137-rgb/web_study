@@ -1,0 +1,101 @@
+@charset "utf-8";
+@import url(poongkuk.css);
+
+/* header */
+header {
+    height: 70px;
+    padding: 0 2.5%;
+}
+
+header h1 a {
+    height: 40px;
+    background-position: left center;
+}
+
+section {
+    height: auto;
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+section .main-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+
+/* main 이미지 */
+#main-visual {
+    height: 70vh;
+}
+
+#main-visual .main-title {
+    width: 80%;
+}
+
+.main-title .title {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.main-title .title::before {
+    height: 35px;
+    bottom: -35px;
+}
+
+/* menu-story */
+.story-list {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.story-list li {
+    flex: none;
+    height: 350px;
+}
+
+/* day */
+#day {
+    padding: 0 70px;
+    height: 75vh;
+    background-size: 40vw 25vh;
+    background-position: top center;
+}
+
+#day .inner {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#withyou .inner {
+    flex-direction: column;
+    height: 75vh;
+    position: relative;
+    width: 100%;
+}
+
+#withyou .store-pics {
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 220px 250px;
+    top: -50px;
+}
+
+#withyou .store-pics li {
+    width: calc((100% / 4) - 20px);
+    height: 20vh;
+}
+
+section .main-title::after {
+    height: 35px;
+    bottom: -40px;
+}
+
+#withyou {
+    padding: 150px 0 0 0;
+}

@@ -1,0 +1,402 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+@import url('https://webfontbox.github.io/Arita/font.min.css');
+
+body {
+    font-family: 'Arita buri';
+}
+
+/* 공통 요소 */
+section {
+    height: 100vh;
+}
+
+section .inner {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+section .main-title {
+    position: relative;
+    font-size: 44px;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+section .main-title::after {
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    content: '';
+}
+
+section .text {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    /* 대문자로 변환 */
+    margin-bottom: 20px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+/* header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    display: block;
+    width: 180px;
+    height: 50px;
+    background: url(../img/logo_white.svg) no-repeat center/contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav>a {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+}
+
+nav>a+a {
+    font-size: 32px;
+    line-height: 0;
+}
+
+/* main-visual */
+#main-visual {
+    height: 100vh;
+    background: url(../img/bg_brand.jpg) center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 부모의 height가 있어야 자식요소가 높이기준 가운데 정렬이 됨  */
+}
+
+#main-visual .main-title {
+    width: 40%;
+    color: #fff;
+    text-align: center;
+}
+
+.main-title span {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    display: block;
+}
+
+.main-title>span {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.main-title .title {
+    position: relative;
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    /* 가상선택자로 title요소 아래에 line을 추가하기 위한 공간 */
+}
+
+.main-title .title::before {
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    content: '';
+}
+
+.main-title .text>span {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#main-visual .main-title::after {
+    display: none;
+}
+
+.main-title .btn.btnGoBrand::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    content: '';
+    transition: 0.3s;
+}
+
+.main-title .btn.btnGoBrand:hover::before {
+    width: 100%;
+}
+
+.main-title .btn.btnGoBrand span {
+    position: relative;
+    z-index: 2;
+}
+
+.main-title .btn.btnGoBrand:hover span {
+    color: black
+}
+
+/* 메뉴스토리 */
+#menu-story .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.story-list li {
+    position: relative;
+    flex: 1;
+    /* 부모 기준 넓이를 자식요소가 균등하게 */
+    height: 500px;
+    background: url(../img/img_stroy1.jpg) no-repeat center/cover;
+    transition: all 0.3s;
+}
+
+.story-list .menu-pic02 {
+    background-image: url(../img/img_stroy2.jpg);
+}
+
+.story-list .menu-pic03 {
+    background-image: url(../img/img_stroy3.jpg);
+}
+
+.story-list .desc {
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    transition: 0.4s;
+}
+
+.story-list .desc span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.story-list .btnMore>span {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+    width: 32px;
+    height: 1px;
+    background: transparent;
+    transition: 0.2s;
+}
+
+.story-list .btnMore>span+span {
+    transform: rotate(90deg);
+    /* 90도 회전 - 각도를 deg */
+}
+
+/* li-effect */
+.story-list li:hover {
+    box-shadow: 15px 20px 40px rgba(0, 0, 0, .25);
+    /* x축 y축 blur(그림자 크기) 그림자색상 */
+}
+
+.story-list li>a::before {
+    position: absolute;
+    inset: 0;
+    /* top 0 right 0 left 0 bottom 0을 모두 포함 */
+    background: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
+    transition: 0.4s;
+    opacity: 0;
+    content: ''
+}
+
+.story-list li:hover>a::before {
+    opacity: 1;
+}
+
+.story-list li:hover .desc {
+    bottom: 60px
+}
+
+.story-list li:hover .btnMore>span {
+    background: #fff;
+}
+
+/* day */
+#day {
+    background: #f0dfc3 url(../img/img_5h.jpg) no-repeat left center / 50%;
+}
+
+#day .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* 영역이오른쪽으로 오도록 */
+    text-align: center;
+}
+
+#day .main-title::after {
+    background: #000;
+}
+
+#day .day-text .text span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#day .day-text .btn.btnMenu {
+    position: relative;
+    border-color: #111;
+}
+
+#day .day-text .btn.btnMenu::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000000;
+    content: '';
+    transition: 0.3s;
+}
+
+#day .day-text .btn.btnMenu:hover {
+    color: #fff
+}
+
+#day .day-text .btn.btnMenu:hover::before {
+    width: 100%;
+}
+
+#day .day-text .btn.btnMenu span {
+    position: relative;
+    z-index: 2;
+}
+
+/* withyou */
+#withyou {
+    background-image: url(../img/bg_store.png), url(../img/bg_store2.png);
+    background-repeat: no-repeat;
+    background-position: left -100px top, left 70% center;
+}
+
+#withyou .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    /* 영역이오른쪽으로 오도록 */
+    text-align: center;
+}
+
+#withyou .store-pics {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    /* 줄바꿈 */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#withyou .store-pics li {
+    width: calc((100%/2) - 30px);
+    height: 35vh;
+}
+
+#withyou .store-pics li img {
+    width: 100%;
+}
+
+#withyou .main-title::after {
+    background: #000;
+}
+
+#withyou .with-text {
+    width: 50%;
+}
+
+#withyou .with-text .text span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#withyou .with-text .btn.btnStore {
+    position: relative;
+    border-color: #111;
+}
+
+#withyou .with-text .btn.btnStore::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000000;
+    content: '';
+    transition: 0.3s;
+}
+
+#withyou .with-text .btn.btnStore:hover {
+    color: #fff
+}
+
+#withyou .with-text .btn.btnStore:hover::before {
+    width: 100%;
+}
+
+#withyou .with-text .btn.btnStore span {
+    position: relative;
+    z-index: 2;
+}
