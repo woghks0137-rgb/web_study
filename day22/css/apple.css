@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(fonts.css);
+
+#wrap {
+    margin: 30px 0;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#help-container .img-box img {
+    width: 159px;
+    height: 159px;
+    display: block;
+    margin: 0 auto;
+}
+
+#help-container .text-box {
+    text-align: center;
+}
+
+#help-container .text-box h2 {
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+#help-container .text-box p {
+    font-size: 24px;
+}
+
+#help-container .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#help-container .menu li {
+    width: 163px;
+    height: 111px;
+}
+
+#help-container .menu li img {
+    width: 42px;
+    height: 68px;
+}
