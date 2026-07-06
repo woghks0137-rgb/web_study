@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+html {
+    font-size: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+.inner {
+    padding-inline: 3%;
+    /* padding 좌우 */
+}
+
+.gnb-area>ul {
+    flex-wrap: wrap;
+    /* 공간이 부족할때 아래로 내림 */
+    justify-content: space-around;
+    /* 양옆 똑같은 값을 주면서 밸런스를 맞춤 */
+}
+
+.gnb-area>ul>li {
+    width: calc((100%/2) - 10px);
+    /* 전체를 2등분하고 거기서 10px씩 마이너스 함 */
+}
+
+main .inner {
+    padding: 3.125rem 3% 1.875rem;
+    flex-direction: column;
+    /* 자식요소를 새로로 배치 */
+}
+
+main section,
+main aside {
+    width: 100%;
+}

@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(fonts.css);
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-size: 1rem;
+}
+
+.inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background: linear-gradient(45deg, #8bdeda, #ef9393);
+    padding-top: 1.667rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    /* 18 * 2 = 36px */
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+header .sub-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* header > gnb */
+.gnb-area>ul {
+    display: flex;
+    /* 부모가 flex 요소를 가지면 자식은 block 요소를 가지게 된다 */
+    gap: 10px;
+    /* display : block는 width / height가 부모기준 100% , margin top,bottom을 줄 수 있음 */
+}
+
+.gnb-area>ul a {
+    display: block;
+    /* ul이 Flex 속성을 가지면 직계 li만 블럭으로 바뀌기 때문에 따로 블럭 속성을 줄 필요가 있음 */
+    background: slateblue;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* main */
+main .inner {
+    padding: 5.56rem 0 2.78em;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.33rem;
+    /* 60px */
+}
+
+main img {
+    max-width: 100%;
+}
+
+main section {
+    width: 75%;
+}
+
+main section>* {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+main h2 {
+    font-size: 1.667rem;
+    margin-bottom: 1.11rem;
+}
+
+main aside {
+    width: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #e3d7cd;
+    align-self: flex-start;
+}
+
+main aside img {
+    margin-bottom: 1rem;
+}
+
+main aside button {
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: darkred;
+}
+
+main .btn-area {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* footer */
+footer {
+    padding: 1.11rem 0;
+    background: lightgray;
+    text-align: center;
+    color: #999;
+}
