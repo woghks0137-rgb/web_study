@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+}
+
+/* 공통 */
+.inner {
+    position: relative;
+    width: min(1280px, 94%);
+    /* min = 최소 이정도 크기는 넘어야 한다  */
+    /* min(값1 , 값2) - 두 값 중 더 작은 값을 선택
+    화면 너비 2000px인 경우
+    1280px , 2000*0.94=1880px */
+
+    /* max(값1 , 값2) - 두 값 중 더 큰 값을 선택
+    화면 너비 2000px인 경우
+    1280px , 2000*0.94=1880px */
+    margin: 0 auto;
+}
+
+section+section {
+    padding: 9.38rem 0;
+    /* section + section은 첫번째 섹션을 제외한 나머지에게 라는 의미 */
+}
+
+section h2 {
+    font-weight: 600;
+    color: #111;
+    font-size: 44px;
+    margin-bottom: 4.375rem;
+    text-align: center;
+}
