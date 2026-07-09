@@ -1,0 +1,310 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+
+/* 공통 */
+.inner {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 125px 0
+}
+
+section h2 {
+    position: relative;
+    text-align: center;
+    font-size: 44px;
+    color: #201b17;
+    margin-bottom: 100px;
+}
+
+section .sub-text {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Cafe24Gowoonbam';
+}
+
+/* header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+header .inner {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding: 30px;
+}
+
+header .logo {
+    font-family: 'Ria';
+    font-size: 26px;
+    font-weight: normal;
+    color: #fff;
+}
+
+header .gnb {
+    display: flex;
+    gap: 50px;
+    margin-left: 100px;
+}
+
+header .gnb>li>a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Philosopher', serif;
+    color: #fff;
+}
+
+header .gnb>li>a:hover {
+    color: #ffcc00
+}
+
+/* 예약하기 버튼 */
+.btn-reserve {
+    width: 160px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    font-weight: 500;
+    margin-left: auto;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.btn-reserve:hover {
+    background: #000;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+/* main-slide */
+.main-slide .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    /* flex는 부모가 자식의 위치를 지정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-slide .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-slide .swiper-slide .main-text {
+    /*  position은 스스로 위치를 지정 */
+    position: absolute;
+    /* top: 50%; left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 2;
+    /* z-index로 요소의 위아래 순서를 적용하려면 반드시 position이 선언되어있어야함. */
+}
+
+.swiper-slide .main-text .title {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.swiper-slide .main-text .sub-title {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center;
+}
+
+/* about 영역 */
+#sec-about {
+    position: relative;
+    height: 860px;
+}
+
+#sec-about::before {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/about.png) no-repeat center/cover;
+    content: '';
+}
+
+#sec-about .inner {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+}
+
+#sec-about .about-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 250px;
+}
+
+.about-text>span {
+    font-size: 17px;
+    color: #786558;
+    display: block;
+    margin-bottom: 15px;
+    font-family: "Pretendard Variable", Pretendard,
+}
+
+.about-text .title {
+    margin-bottom: 150px;
+}
+
+.about-text .title span {
+    display: block;
+    font-size: 48px;
+    color: #b85c1b;
+    margin-bottom: 10px;
+}
+
+.about-text .title span+span {
+    margin-left: 55px;
+}
+
+.about-text .text {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+/* 서비스영역 */
+#sec-service {
+    background: #f9eee9;
+}
+
+#sec-service h2::after {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 60px;
+    background: #95887b;
+    content: '';
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-list li {
+    text-align: center;
+}
+
+.service-list li img {
+    margin-bottom: 25px;
+}
+
+.service-list .service-text strong {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #201b17;
+    margin-bottom: 15px;
+}
+
+.service-list .service-text p {
+    font-family: "Pretendard Variable", Pretendard;
+    font-size: 18px;
+    color: #786558;
+    line-height: 1.6;
+    padding: 0 30px;
+}
+
+/* 리뷰 */
+#sec-review h2 {
+    margin-bottom: 25px;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+}
+
+.review-list .pic {
+    overflow: hidden;
+    height: 450px;
+    margin-bottom: 30px;
+}
+
+.review-list .pic img {
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.review-list li:hover .pic img {
+    transform: scale(1.1);
+}
+
+.review-list .review-text {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+}
+
+.review-list .review-text .write {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.review-list .review-text .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #201b17;
+    margin-bottom: 15px;
+}
+
+.review-list .review-text .text {
+    word-break: keep-all;
+}
+
+/* FOOTER */
+footer {
+    background: #686868;
+}
+
+footer .copy {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    color: #eee;
+    text-align: center;
+    padding: 25px 0;
+}

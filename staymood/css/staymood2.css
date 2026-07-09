@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* 공통 */
+section {
+    padding: 50px 0
+}
+
+section h2 {
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+section .sub-text {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* header */
+header .inner {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 25px;
+}
+
+header .logo {
+    position: relative;
+    font-size: 22px;
+    color: #fff;
+    z-index: 15;
+}
+
+header .logo.on {
+    color: #146726;
+}
+
+header .gnb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 80px 50px 40px;
+    background: #fff;
+    display: block;
+    margin-left: 0;
+    display: none;
+}
+
+header .gnb>li>a {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Philosopher', serif;
+    font-weight: 500;
+    color: #111;
+    text-align: center;
+}
+
+/* 예약하기 버튼 */
+.btn-reserve {
+    position: relative;
+    width: auto;
+    padding: 10px;
+    background: #ef7416;
+    z-index: 10;
+
+}
+
+.btn-mobile {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: none;
+    margin-left: 10px;
+}
+
+.btn-mobile ion-icon {
+    font-size: 36px;
+    color: #fff;
+}
+
+.btn-mobile.on ion-icon {
+    color: #111;
+}
+
+/* main-slide */
+.main-slide .swiper-slide {
+    height: 60vh;
+}
+
+.main-slide .swiper-slide img {
+    object-fit: cover;
+}
+
+.swiper-slide .main-text .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.swiper-slide .main-text .sub-title {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* about 영역 */
+#sec-about {
+    height: 540px;
+}
+
+#sec-about::before {
+    width: 100%;
+    height: 100%;
+}
+
+#sec-about .inner {
+    justify-content: center;
+    align-items: center;
+}
+
+#sec-about .about-text {
+    width: 85%;
+    height: auto;
+    display: block;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.about-text>span {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.about-text .title {
+    margin-bottom: 30px;
+}
+
+.about-text .title span {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.about-text .title span+span {
+    margin-left: 0px;
+}
+
+.about-text .text {
+    font-size: 16px;
+}
+
+/* 서비스영역 */
+#sec-service h2::after {
+    display: none;
+}
+
+.service-list {
+    gap: 16px;
+}
+
+.service-list li img {
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+.service-list .service-text strong {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.service-list .service-text p {
+    display: none;
+}
+
+/* 리뷰 */
+#sec-review .inner {
+    padding: 0 3%;
+}
+
+#sec-review h2 {
+    margin-bottom: 10px;
+}
+
+.review-list {
+    gap: 20px;
+}
+
+.review-list .pic {
+    height: 260px;
+    margin-bottom: 20px;
+}
+
+.review-list .pic img {
+    max-width: 100%;
+}
+
+.review-list .review-text .title {
+    margin-bottom: 10px;
+}
