@@ -1,0 +1,96 @@
+# 📱 StayMood - Responsive Web Practice
+
+## 📖 프로젝트 소개
+
+기존 PC 버전으로 제작한 StayMood 웹사이트를 모바일 환경에서도 사용할 수 있도록 반응형 웹으로 구현한 연습 프로젝트입니다.
+
+HTML, CSS를 이용하여 화면 크기에 따라 레이아웃이 자연스럽게 변경되도록 제작하였으며, 모바일 메뉴와 이미지 크기 조정 등 기본적인 반응형 UI를 구현했습니다.
+
+---
+
+## 🛠 사용 기술
+
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Swiper.js
+
+---
+
+## 📌 구현 내용
+
+### Desktop
+
+- 메인 비주얼 Swiper 슬라이드
+- About 섹션
+- Service 섹션
+- Review 섹션
+- Header 메뉴
+- 예약하기 버튼
+
+### Mobile
+
+- Media Query 적용
+- 모바일 Header 구성
+- 햄버거 메뉴 버튼
+- GNB 메뉴 변경
+- 메인 이미지 높이 조정
+- About 영역 모바일 레이아웃 변경
+- Service 아이콘 크기 및 배치 변경
+- Review 카드 모바일 레이아웃 적용
+
+---
+
+## 💡 공부한 내용
+
+- Media Query 사용법
+- Flex 레이아웃 변경
+- 이미지 반응형 처리
+- object-fit 활용
+- 모바일 메뉴 구성
+- display 변경
+- 가변 크기 레이아웃 제작
+
+---
+
+## 📂 폴더 구조
+
+```
+staymood/
+├── css
+│   ├── staymood.css
+│   ├── staymood2.css
+│   ├── reset.css
+│   └── fonts.css
+│
+├── img
+│
+├── js
+│   └── script.js
+│
+└── index.html
+```
+
+---
+
+## 🎯 학습 목표
+
+- PC → Mobile 반응형 웹 제작 과정 이해
+- Media Query 활용 능력 향상
+- HTML/CSS 레이아웃 구성 연습
+- Swiper 및 jQuery 활용 연습
+
+---
+
+## 📅 제작 기간
+
+2026.07
+
+---
+
+## ✍️ 회고
+
+이번 프로젝트를 통해 PC 화면을 모바일 화면으로 변경하는 과정과 Media Query를 활용한 반응형 레이아웃 제작 방법을 연습했습니다.
+
+특히 이미지 크기 조정, Flex 방향 변경, 모바일 메뉴 구성 등을 직접 구현하면서 반응형 웹 제작 과정을 익힐 수 있었습니다.
