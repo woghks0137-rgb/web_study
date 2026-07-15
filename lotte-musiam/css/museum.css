@@ -842,102 +842,73 @@ section h2 {
     font-weight: 400;
 }
 
+
 /* 링크영역 */
 #sec-link-area .inner {
     display: flex;
-    justify-content: space-between;
     width: 100%;
 }
 
-#sec-link-area .link-box1 {
+#sec-link-area .link-box {
     display: flex;
     align-items: center;
-    width: 50%;
+    justify-content: space-between;
+    /* 아이콘과 화살표를 양 끝으로 배치 */
+    flex: 1;
+    /* 박스 2개가 50%씩 균등하게 너비 차지 */
     height: 100px;
     padding: 0 50px;
+    /* 여기서 양옆 모서리 끝까지의 간격을 결정 */
+    box-sizing: border-box;
+    /* 패딩이 전체 너비에 포함되도록 설정 */
+}
+
+#sec-link-area .link-box1 {
     background: #005e3c;
 }
 
 #sec-link-area .link-box2 {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    height: 100px;
-    padding: 0 50px;
     background: #013a25;
-
 }
 
-#sec-link-area .item-box01 {
-    position: relative;
+/* 왼쪽 아이콘 + 텍스트 그룹 */
+#sec-link-area .content {
     display: flex;
     align-items: center;
-    gap: 10px;
-    height: 100%;
-    width: 100%;
-    margin-left: 280px;
+    gap: 15px;
 }
 
-#sec-link-area .item-box02 {
-    position: relative;
+#sec-link-area .left-content {
+    margin-left: 220px;
+}
+
+/* 스타일 세부 설정 */
+#sec-link-area .pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
-    gap: 10px;
-    height: 100%;
-    width: 100%;
-    margin-right: 280px;
+    justify-content: center;
 }
-
-#sec-link-area .pic01 {
-    align-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #013a25;
-
-}
-
-#sec-link-area .pic02 {
-    align-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #01291a;
-
-}
-
-#sec-link-area img {
-    display: flex;
-    justify-self: center;
-    width: 22px;
-    height: 22px;
-}
-
 
 #sec-link-area .text {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     color: #fff;
 }
 
-#sec-link-area .item-box01 .right {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    color: #fff;
+#sec-link-area .link-box2 .right-arrow {
+    margin-right: 220px;
 }
 
-#sec-link-area .item-box02 .right {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    color: #fff;
-}
-
-#sec-link-area .item-box01 .right img,
-#sec-link-area .item-box02 .right img {
+#sec-link-area .right-arrow img {
     width: 30px;
     height: 30px;
+}
+
+#sec-link-area .pic img {
+    width: 22px;
+    height: 22px;
 }
