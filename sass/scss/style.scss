@@ -1,0 +1,50 @@
+@use './commom.scss';
+
+/* 변수 */
+$hero-height: 400px;
+$title-size: 36px;
+$content-padding: 60px;
+$gap: 20px;
+$box-padding: 40px;
+$border-color: royalblue;
+$box-bg: #fff;
+$dis-flex: flex;
+$justify-c: center;
+$align: center;
+$tc: center;
+
+/* hero */
+.hero {
+    height: $hero-height;
+    background: url(https://images.unsplash.com/photo-1783955550531-410cf7b4469f?w=500&auto=format&fit=crop)center/cover;
+    display: flex;
+    justify-content: $justify-c;
+    align-items: $align;
+
+    h1 {
+        font-size: $title-size;
+    }
+
+    button {
+        margin-top: $gap;
+        padding: 16px 20px;
+        border: 1px solid $border-color;
+        color: $border-color;
+    }
+}
+
+.content {
+    padding: $content-padding;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $gap;
+
+        .box {
+            background: rosybrown;
+            padding: $box-padding;
+            text-align: $tc;
+        }
+    }
+}

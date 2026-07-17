@@ -1,0 +1,27 @@
+@use '../scss/commom.scss';
+
+//변수
+$card-bg: #fff;
+$product-gap: 25px;
+$product-padding: 40px;
+$title-size: 18px;
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $product-gap;
+    padding: $product-padding;
+
+    .item {
+        background: $card-bg;
+        text-align: center;
+
+        img {
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-size: $title-size;
+        }
+    }
+}

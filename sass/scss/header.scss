@@ -1,0 +1,35 @@
+@charset"utf-8";
+@use './commom.scss';
+
+.header {
+    height: 80px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 28px;
+        font-weight: bold;
+
+    }
+
+    &__menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__link {
+        color: #333;
+
+        &:hover {
+            color: blue;
+        }
+    }
+
+    &__menu-button {
+        display: none;
+    }
+}
