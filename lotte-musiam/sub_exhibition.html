@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클론-롯데민속박물관</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/museum.css">
+    <link rel="stylesheet" href="css/sub_museum.css">
+    <link rel="stylesheet" href="css/m-museum.css" media="screen and (max-width: 600px)">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"
+        integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M=" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/script.js" defer></script>
+</head>
+
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-top">
+                <div class="inner">
+                    <div class="head-site">
+                        <ul>
+                            <li>
+                                <a href="https://adventure.lotteworld.com/" target="_blank">롯데월드 어드벤쳐</a>
+                            </li>
+                            <li>
+                                <a href="https://adventurebusan.lotteworld.com/" target="_blank">롯데월드 어드벤쳐 부산</a>
+                            </li>
+                            <li>
+                                <a href="https://seoulsky.lotteworld.com/" target="_blank">서울 스카이</a>
+                            </li>
+                            <li>
+                                <a href="https://aquarium.lotteworld.com/" target="_blank">롯데월드 아쿠아리움</a>
+                            </li>
+                            <li>
+                                <a href="https://waterpark.lotteworld.com/" target="_blank">롯데워터파크</a>
+                            </li>
+                            <li>
+                                <a href="https://lotteworld.vn/" target="_blank">롯데월드 아쿠아리움 하노이</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="on"><a href="">민속박물관</a></li>
+                            <li><a href="https://adventure.lotteworld.com/icerink/" target="_blank">아이스링크</a></li>
+                        </ul>
+                    </div>
+                    <!-- header-site -->
+
+                    <div class="user-action">
+                        <ul>
+                            <li><a href="">로그인</a></li>
+                            <li class="lang">
+                                <a href="#">KOR</a>
+                                <ul class="sub-lang">
+                                    <li><a href="">KOR</a></li>
+                                    <li><a href="">ENG</a></li>
+                                    <li><a href="">JP</a></li>
+                                    <li><a href="">CHN</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- USER ACTION -->
+                </div>
+            </div>
+            <!-- //header-top -->
+
+            <div class="header-bot">
+                <div class="inner">
+                    <div class="left-area">
+                        <h1 class="logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="">
+                                <span class="blind">롯데월드 어드밴쳐 민속박물관</span>
+                            </a>
+                        </h1>
+                        <ul class="gnb">
+                            <li><a href="sub_intro.html">민속박물관</a></li>
+                            <li class="on"><a href="#">부대시설</a></li>
+                            <li><a href="#">전시정보</a></li>
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">소통서비스</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-action">
+                        <a href="#" class="btn-reserve">예매하기</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <main class="container">
+            <div class="inner location_inner">
+                <ul class="location">
+                    <li>
+                        <a href="#">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="location-menu">
+                        <a href="#">부대시설</a>
+                        <ul class="link-sub">
+                            <li><a href="#">민속박물관 </a></li>
+                            <li><a href="#">부대시설</a></li>
+                            <li><a href="#">전시정보</a></li>
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">소통서비스</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                        </ul>
+                    </li>
+                    <li class="location-menu locate-intro">
+                        <a href="#">시설안내</a>
+                        <ul class="link-sub">
+                            <li><a href="#">시설안내 </a></li>
+                            <li><a href="#">대관안내</a></li>
+                            <li><a href="#">전통혼례</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <section id="sec-facilities">
+                <div class="inner">
+                    <div class="tab-area">
+                        <ul class="tab-menu">
+                            <li class="on">
+                                <button>저자거리</button>
+                            </li>
+                            <li>
+                                <button>민속기념품점</button>
+                            </li>
+                        </ul>
+                        <!-- tab menu -->
+
+                        <div class="tab-contents">
+                            <div class="tab-cont on ">
+                                <h2>저작거리</h2>
+                                <p class="sub-text">
+                                    조선시대 장터 풍경을 그대로 재현한 저자거리<br>
+                                    한국의 전통음식도 즐기고, 훈훈한 장터의 모습을 직접 체험할 수 있는 민속식당가입니다.
+                                </p>
+                                <ul class="sub-tab-menu">
+                                    <li class="on">
+                                        <button>석촌(보돌미역)</button>
+                                    </li>
+                                    <li>
+                                        <button>몽촌 채선당 자연한가득</button>
+                                    </li>
+                                    <li>
+                                        <button>주막 · 송파</button>
+                                    </li>
+                                </ul>
+                                <div class="sub-tab-contents">
+                                    <div class="sub-tab-cont on">
+                                        <div class="pic">
+                                            <img src="img/sub/img-facilities01.jpg" alt="석촌 보돌 미역">
+                                        </div>
+                                        <div class="text-area">
+                                            <div class="title-area">
+                                                <p class="title">석촌(보돌미역)</p>
+                                                <p class="sub-title">전복, 가자미 미역국 전문점</p>
+                                            </div>
+
+                                            <div class="text-area">
+                                                <p class="text">푸른 바다의 신섬함을 고이 담은, 보돌보돌한 미역으로 끓인 진한 미역국입니다. <br>
+                                                    좋은 재료로 만든 다양한 미역국 정찬 메뉴로 몸보신하세요.</p>
+                                                <dl>
+                                                    <div>
+                                                        <dt>
+                                                            <span>
+                                                                <img src="img/sub/ico-f01.svg" alt="">
+                                                            </span>
+                                                            연락처
+                                                        </dt>
+                                                        <dd>010-8930-9811</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>
+                                                            <span>
+                                                                <img src="img/sub/ico-f02.svg" alt="">
+                                                            </span>
+                                                            메뉴
+                                                        </dt>
+                                                        <dd>가자미 미역국, 활전복 가자미 미역국
+                                                            활전복 내장죽, 돌새전장정식</dd>
+                                                    </div>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-tab-cont">
+                                        <div class="pic">
+                                            <img src="img/sub/img-facilities02.jpg" alt="몽촌 채선당 자연한가득">
+                                        </div>
+                                        <div class="text-area">
+                                            <div class="title-area">
+                                                <p class="title">몽촌 채선당 자연한가득</p>
+                                                <p class="sub-title">샤브샤브 전문점</p>
+                                            </div>
+
+                                            <div class="text-area">
+                                                <p class="text">푸짐한 소고기, 화끈한 마라가 있는 프리미엄 샤브샤브!</p>
+                                                <dl>
+                                                    <div>
+                                                        <dt>
+                                                            <span>
+                                                                <img src="img/sub/ico-f01.svg" alt="">
+                                                            </span>
+                                                            연락처
+                                                        </dt>
+                                                        <dd>010-2143-1497</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dt>
+                                                            <span>
+                                                                <img src="img/sub/ico-f02.svg" alt="">
+                                                            </span>
+                                                            메뉴
+                                                        </dt>
+                                                        <dd>샤브샤브</dd>
+                                                    </div>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-tab-cont">
+                                        <div class="pic">
+                                            <img src="img/sub/img-facilities03.jpg" alt="주막 · 송파">
+                                        </div>
+                                        <div class="text-area">
+                                            <div class="title-area">
+                                                <p class="title">주막 · 송파</p>
+                                                <p class="sub-title">30년 전통 롯데월드 전통한식당 주막ㆍ송파</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-area">
+                                            <p class="text">푸짐한 제육보쌈과 구수한 장터국밥, 비빔밥은 물론, 전판에서 바로 부쳐낸 따끈따끈한 파전에 막걸리<br>
+                                                한잔을 즐길 수 있는 곳입니다. <br>
+                                                30년간 한결같이 정겨운 전통한식을 선보인 주막에 들러 우리 음식의 맛과 멋을 즐겨보세요.</p>
+                                            <dl>
+                                                <div>
+                                                    <dt>
+                                                        <span>
+                                                            <img src="img/sub/ico-f01.svg" alt="">
+                                                        </span>
+                                                        연락처
+                                                    </dt>
+                                                    <dd>02-411-4842</dd>
+                                                </div>
+                                                <div>
+                                                    <dt>
+                                                        <span>
+                                                            <img src="img/sub/ico-f02.svg" alt="">
+                                                        </span>
+                                                        메뉴
+                                                    </dt>
+                                                    <dd>왕갈비탕, 비빔밥, 장터국밥, 낙지덮밥, 제육보쌈, 파전, 모둠전<br>
+                                                        (계절에 따라 메뉴 및 영업시간이 변동될 수 있습니다)</dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-cont  ">
+                                <h2>민속기념품점</h2>
+                                <p class="sub-text">
+                                    전통의 아름다움을 담은 롯데월드 민속기념품점<br>
+                                    롯데월드 민속기념품점에서 우리 고유의 전통상품들을 만나보세요
+                                </p>
+                                <div class="suv_contents">
+                                    <div class="suv suv01">
+                                        <div class="text-group">
+                                            <p class="title">가람공방</p>
+                                            <p class="text">자개,탈,인형,수예품</p>
+                                            <p class="tel">
+                                                <img src="img/sub/ico-f03.svg" alt=""> 02-411-0645
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="suv suv02">
+                                        <div class="text-group">
+                                            <p class="title">산정혁필</p>
+                                            <p class="text">혁필,그림</p>
+                                            <p class="tel">
+                                                <img src="img/sub/ico-f03.svg" alt="">02-411-0323
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <div class="inner">
+                <div class="foot-area">
+                    <di v class="foot-left">
+                        <a href="https://adventure.lotteworld.com/introduce/lotte-world" target="_blank"
+                            title="롯데월드로 이동" class="f-logo">
+                            <img src="img/lotte-logo.svg" alt="롯데월드 로고">
+                        </a>
+                        <dl>
+                            <dt>롯데월드 어드밴쳐</dt>
+                            <dd>
+                                <p>서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드|대표자 : 권오상</p>
+                                <p>사업자등록번호 : 219-85-00014|통신판매업신고번호 : 송파 제5513호|전화 : 1661-2000</p>
+                            </dd>
+                        </dl>
+                        <p class="copy">COPYRIGHT 2025 LOTTEWORLD. ALL RIGHTS RESERVED.</p>
+                    </di>
+                    <div class="foot-right">
+                        <ul class="foot-nav">
+                            <li><a href="">롯데월드 어드벤처 소개</a></li>
+                            <li><a href="">롯데월드 소개</a></li>
+                            <li><a href="">제휴문의</a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="" class="point">개인정보처리방침</a></li>
+                            <li><a href="">사이트맵</a></li>
+                        </ul>
+                        <div class="sns">
+                            <a href=""><img src="img/sns_facebook.png" alt="facebook"></a>
+                            <a href=""><img src="img/sns_insta.png" alt="instagram"></a>
+                            <a href=""><img src="img/sns_youtube.png" alt="youtube"></a>
+                        </div>
+                        <dl>
+                            <div>
+                                <dt>
+                                    <img src="img/imgi_23_footer_mark_ismsp-CO5-I-2X.png" alt="ismsp mark">
+                                </dt>
+                                <dd>
+                                    인증범위|롯데월드 예매서비스<br>유효기간|2023.11.01 ~ 2026.10.31
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>
+                                    <img src="img/imgi_24_footer_mark_service-Bb-xvGQT.png" alt="ismsp mark">
+                                </dt>
+                                <dd>한국서비스대상 명예의 전당</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>

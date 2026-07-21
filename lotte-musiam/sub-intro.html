@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클론-롯데민속박물관</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/museum.css">
+    <link rel="stylesheet" href="css/sub_museum.css">
+    <link rel="stylesheet" href="css/m-museum.css" media="screen and (max-width: 600px)">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"
+        integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M=" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/script.js" defer></script>
+</head>
+
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-top">
+                <div class="inner">
+                    <div class="head-site">
+                        <ul>
+                            <li>
+                                <a href="https://adventure.lotteworld.com/" target="_blank">롯데월드 어드벤쳐</a>
+                            </li>
+                            <li>
+                                <a href="https://adventurebusan.lotteworld.com/" target="_blank">롯데월드 어드벤쳐 부산</a>
+                            </li>
+                            <li>
+                                <a href="https://seoulsky.lotteworld.com/" target="_blank">서울 스카이</a>
+                            </li>
+                            <li>
+                                <a href="https://aquarium.lotteworld.com/" target="_blank">롯데월드 아쿠아리움</a>
+                            </li>
+                            <li>
+                                <a href="https://waterpark.lotteworld.com/" target="_blank">롯데워터파크</a>
+                            </li>
+                            <li>
+                                <a href="https://lotteworld.vn/" target="_blank">롯데월드 아쿠아리움 하노이</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="on"><a href="">민속박물관</a></li>
+                            <li><a href="https://adventure.lotteworld.com/icerink/" target="_blank">아이스링크</a></li>
+                        </ul>
+                    </div>
+                    <!-- header-site -->
+
+                    <div class="user-action">
+                        <ul>
+                            <li><a href="">로그인</a></li>
+                            <li class="lang">
+                                <a href="#">KOR</a>
+                                <ul class="sub-lang">
+                                    <li><a href="">KOR</a></li>
+                                    <li><a href="">ENG</a></li>
+                                    <li><a href="">JP</a></li>
+                                    <li><a href="">CHN</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- USER ACTION -->
+                </div>
+            </div>
+            <!-- //header-top -->
+
+            <div class="header-bot">
+                <div class="inner">
+                    <div class="left-area">
+                        <h1 class="logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="">
+                                <span class="blind">롯데월드 어드밴쳐 민속박물관</span>
+                            </a>
+                        </h1>
+                        <ul class="gnb">
+                            <li class="on"><a href="sub_intro.html">민속박물관</a></li>
+                            <li><a href="#">부대시설</a></li>
+                            <li><a href="#">전시정보</a></li>
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">소통서비스</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-action">
+                        <a href="#" class="btn-reserve">예매하기</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <main class="container">
+            <div class="inner location_inner">
+                <ul class="location">
+                    <li>
+                        <a href="#">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="location-menu">
+                        <a href="#">민속박물관</a>
+                        <ul class="link-sub">
+                            <li><a href="#">민속박물관</a></li>
+                            <li><a href="#">부대시설</a></li>
+                            <li><a href="#">전시정보</a></li>
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">소통서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="location-menu locate-intro">
+                        <a href="#">민속박물관 소개</a>
+                        <ul class="link-sub">
+                            <li><a href="#">민속박물관 소개</a></li>
+                            <li><a href="#">관람안내</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <section id="sec-intro">
+                <h2>민속박물관 소개</h2>
+                <div class="intro-visual">
+                    <div class="inner">
+                        <p class="title">모두와 함께하는 롯데월드 민속박물관</p>
+                        <p class="text">1989년 1월 14일 롯데그룹 문화사업의 일환으로 송파 장터와 송파 산대놀이의 고장 잠실에 총면적 8,039㎡ 규모로 개관하였습니다.</p>
+                        <p class="text">
+                            구석기시대부터 조선시대까지의 우리 역사를 시대별로 구분하여 실제 유물 및 재현 모형을 통해 알기 쉽고 재미있게 관람이 가능하도록 전시되어 있습니다. 특히 모형 촌은
+                            8분의 1로 축소된 2천여 점의 인형을 이용하여 조선시대의 사계절과 세시풍속, 관혼상제, 왕실과 백성들의 생활모습을 사실적으로 표현하였습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- //intro -->
+
+            <section id="sec-landmark">
+                <div class="inner">
+                    <div class="landmark-list">
+                        <div>
+                            <div class="pic">
+                                <img src="img/sub_intro_landmark01.jpg" alt="">
+                            </div>
+                            <div class="text-area">
+                                <h3>전통문화를 알리는 관광명소</h3>
+                                <p class="text">
+                                    일반적으로 박물관의 역할이 유물의 수집 및 전시 중심에 있다면, <br>롯데월드 민속박물관은 5,000년 우리 역사와 전통문화를 세계에 알리는
+                                    관광명소입니다.
+                                </p>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-view">전시 바로가기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pic">
+                                <img src="img/sub_intro_landmark02.jpg" alt="">
+                            </div>
+                            <div class="text-area">
+                                <h3>체험하며 즐기는 문화명소</h3>
+                                <p class="text">
+                                    롯데월드 민속박물관은 진로 탐색과 역사 교육 등 다양한 교육 프로그램 및<br> 전통 공예 체험 프로그램을 통해 직접 체험하며 즐기는
+                                    문화공간으로서의<br>
+                                    역할을
+                                    이행하고 있습니다.
+                                </p>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-view">프로그램 바로가기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pic">
+                                <img src="img/sub_intro_landmark03.jpg" alt="">
+                            </div>
+                            <div class="text-area">
+                                <h3>복합 문화 공간으로서의 명소</h3>
+                                <p class="text">
+                                    롯데월드 민속박물관은 각종 강연 및 학술대회, 공연, 직장 내 동호회 모임 등<br> 200여명을 수용할 수 있는 행사장으로서의 역할을 이행하고
+                                    있습니다.
+                                </p>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-view">대관 바로가기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pic">
+                                <img src="img/sub_intro_landmark04.jpg" alt="">
+                            </div>
+                            <div class="text-area">
+                                <h3>롯데월드에서 경험하는 우리나라 고유의 전통혼례</h3>
+                                <p class="text">
+                                    생애 가장 특별한 순간에 경험하는 우리 전통의 아름다운과 멋. 옛 선조들의<br> 방식을 그대로 따라 진행되는 우리나라 고유의 전통혼례와
+                                    뷔페식으로<br> 피로연이
+                                    진행되는 저자거리까지 즐겨보세요!
+                                </p>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-view">전통혼례장 바로가기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pic">
+                                <img src="img/sub_intro_landmark05.jpg" alt="">
+                            </div>
+                            <div class="text-area">
+                                <h3>조선시대 장터 풍경을 그대로 재현한 저자거리</h3>
+                                <p class="text">
+                                    고유의 우리의 맛을 유지하고 계승해 나가는 음식점과의 제휴를 통해 다양한 <br>한국의 전통 음식을 선보입니다.
+                                </p>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-view">저자거리 바로가기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pic">
+                                <img src="img/sub_intro_landmark060.jpg" alt="">
+                            </div>
+                            <div class="text-area">
+                                <h3>우리나라 고유의 전통상품들을 만나볼 수 있는 민속기념품점</h3>
+                                <p class="text">
+                                    롯데월드 민속기념품점에서 우리 고유의 전통상품을 만나보세요.
+                                </p>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-view">민속기념품점 바로가기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //landmark -->
+
+            <section id="sec-culture">
+                <div class="inner">
+                    <h2>모두와 함께하는 롯데월드 민속박물관</h2>
+                    <div class="culture-list">
+                        <div>
+                            <img src="img/sub/sub_intro_icok01.png" alt="">
+                            <h3>역사적인 유적</h3>
+                            <p class="text">전국의 유명하고 역사적인 유적을 전문인의 <br>고증을 바탕으로 모형으로 재현하여 유적지에<br> 직접 가지 않고도 한 곳에서 관람 가능
+                            </p>
+                        </div>
+                        <div>
+                            <img src="img/sub/sub_intro_icok02.png" alt="">
+                            <h3>참여활동</h3>
+                            <p class="text">관람공간(역사전시관, 모형촌)과 참여공간 <br>(전통 및 창의체험교실)을 마련, 정적인 관람<br> 기능에 동적인 참여 기능 부여
+                            </p>
+                        </div>
+                        <div>
+                            <img src="img/sub/sub_intro_icok03.png" alt="">
+                            <h3>전통 혼례</h3>
+                            <p class="text">우리 민족의 전통예법에 따라 혼례를 치르는<br> 전통 초례청 마련</p>
+                        </div>
+                        <div>
+                            <img src="img/sub/sub_intro_icok04.png" alt="">
+                            <h3>교육 프로그램</h3>
+                            <p class="text">역사 교육과 전통 문화 체험 교실 등 다양한 <br>사회교육프로그램 개설</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <div class="inner">
+                <div class="foot-area">
+                    <div class="foot-left">
+                        <a href="https://adventure.lotteworld.com/introduce/lotte-world" target="_blank"
+                            title="롯데월드로 이동" class="f-logo">
+                            <img src="img/f_logo.svg" alt="롯데월드 로고">
+                        </a>
+                        <dl>
+                            <dt>롯데월드 어드밴쳐</dt>
+                            <dd>
+                                <p>서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드|대표자 : 권오상</p>
+                                <p>사업자등록번호 : 219-85-00014|통신판매업신고번호 : 송파 제5513호|전화 : 1661-2000</p>
+                            </dd>
+                        </dl>
+                        <p class="copy">COPYRIGHT 2025 LOTTEWORLD. ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <div class="foot-right">
+                        <ul class="foot-nav">
+                            <li><a href="">롯데월드 어드벤처 소개</a></li>
+                            <li><a href="">롯데월드 소개</a></li>
+                            <li><a href="">제휴문의</a></li>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="" class="point">개인정보처리방침</a></li>
+                            <li><a href="">사이트맵</a></li>
+                        </ul>
+                        <div class="sns">
+                            <a href=""><img src="img/sns_facebook.png" alt="facebook"></a>
+                            <a href=""><img src="img/sns_insta.png" alt="instagram"></a>
+                            <a href=""><img src="img/sns_youtube.png" alt="youtube"></a>
+                        </div>
+                        <dl>
+                            <div>
+                                <dt>
+                                    <img src="img/imgi_23_footer_mark_ismsp-CO5-I-2X.png" alt="ismsp mark">
+                                </dt>
+                                <dd>
+                                    인증범위|롯데월드 예매서비스<br>유효기간|2023.11.01 ~ 2026.10.31
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>
+                                    <img src="img/imgi_24_footer_mark_service-Bb-xvGQT.png" alt="ismsp mark">
+                                </dt>
+                                <dd>한국서비스대상 명예의 전당</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>

@@ -168,7 +168,7 @@ section h2 {
 }
 
 .header-bot .inner .logo {
-    background: url(../img/logo-w.png) no-repeat;
+    /*   background: url(../img/logo-w.png) no-repeat; */
     width: 100px;
     height: 80px;
 }
@@ -911,4 +911,96 @@ section h2 {
 #sec-link-area .pic img {
     width: 22px;
     height: 22px;
+}
+
+
+/* footer */
+footer .inner {
+    padding-block: clamp(3rem, 5.5vw, 6rem);
+}
+
+footer .foot-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer .foot-left .f-logo {
+    display: block;
+    margin-bottom: 7rem;
+}
+
+.foot-left dl {
+    margin-bottom: 3rem;
+}
+
+.foot-left dl dt {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.foot-left dl dd p {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.foot-left .copy {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+footer .foot-right {
+    text-align: right;
+}
+
+.foot-right .foot-nav {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.foot-right .foot-nav li {
+    margin-left: 2rem;
+}
+
+.foot-right .foot-nav li a {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.foot-right .foot-nav .point {
+    color: #7a46be;
+    font-weight: 500;
+}
+
+.foot-right .sns {
+    margin-bottom: 5rem;
+}
+
+.foot-right .sns a {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.foot-right dl {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 25%;
+}
+
+.foot-right dl div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.foot-right dl img {
+    width: 50px
+}
+
+.foot-right dl dd {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 300;
 }

@@ -1,0 +1,571 @@
+@charset "utf-8";
+
+#header {
+    position: sticky;
+    z-index: 100;
+    background: #fff;
+}
+
+/* header-top */
+.header-top,
+.header-bot {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.header-top .head-site ul a {
+    color: rgba(0, 0, 0, 0.65)
+}
+
+.header-top .head-site .on a {
+    color: #065f41;
+}
+
+.header-top .head-site ul:first-child::after {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.header-top .user-action li:first-child::after {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.header-top .user-action>ul>li>a {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.user-action .lang:hover .sub-lang a:hover {
+    color: #111;
+}
+
+/* header-bot */
+.left-area .logo a {
+    background-image: url(../img/logo.png);
+}
+
+.left-area .gnb a {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.header-bot .user-action .btn-reserve {
+    color: #133a32;
+    border-color: #133a32
+}
+
+/* main */
+.container {
+    padding: 5rem 0;
+}
+
+/* location */
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location>li {
+    position: relative;
+}
+
+.location>li>a {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+}
+
+.location>li+li>a::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background: #bbb;
+    content: '';
+}
+
+.location>li>a>ion-icon {
+    vertical-align: middle;
+}
+
+.location .locate-intro>a {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+}
+
+.location .link-sub {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #bbb;
+    display: none;
+}
+
+.location .link-sub a {
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* intro */
+#sec-intro {
+    padding-top: 70px;
+    padding-bottom: 0;
+}
+
+#sec-intro h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#sec-intro .intro-visual {
+    height: 480px;
+    background: url(../img/sub/sub_intro_main_bg.jpg) no-repeat center/cover;
+}
+
+#sec-intro .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sec-intro .title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#sec-intro .text {
+    max-width: 570px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+}
+
+#sec-intro .text+.text {
+    margin-top: 25px;
+}
+
+/* landmark */
+#sec-landmark .landmark-list>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+
+#sec-landmark .text-area {
+    max-width: 440px;
+}
+
+#sec-landmark .text-area h3 {
+    font-size: 30px;
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#sec-landmark .text-area .btn-area {
+    text-align: left;
+}
+
+#sec-landmark .text-area .btn-view {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px 10px 10px;
+    width: inherit;
+    /* 부모한테 상속 */
+    font-size: 15px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+#sec-landmark .text-area .btn-view::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: url(../img/ico_plus.png) no-repeat center;
+    content: ''
+}
+
+/* 교육역사 프로그램 */
+#sec-culture {
+    background: rgb(246, 246, 246);
+}
+
+#sec-culture h2 {
+    text-align: left;
+    font-size: 34px;
+}
+
+#sec-culture .culture-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#sec-culture .culture-list>div {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+#sec-culture .culture-list>div img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#sec-culture .culture-list>div h3 {
+    margin-bottom: 15px;
+}
+
+
+/* ========================== 부대시설 서브페이지 ============================ */
+#sec-facilities {
+    padding-top: 70px;
+    padding-bottom: 0;
+}
+
+/* 탭 버튼 기본 스타일 제거 */
+#sec-facilities button {
+    background: none;
+    font-size: inherit;
+    /* inherit: 부모요소의 값을 상속 */
+    color: inherit;
+    cursor: pointer;
+}
+
+/* 1차 탭메뉴 저자거리/민속기념품점 */
+#sec-facilities .tab-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 75px;
+    border-bottom: 1px solid #ddd;
+}
+
+#sec-facilities .tab-menu>li {
+    position: relative;
+    text-align: center;
+}
+
+#sec-facilities .tab-menu>li>button {
+    color: #777;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/* 선택된 1차 탭 메뉴 */
+#sec-facilities .tab-menu>li.on>button {
+    color: #111;
+    font-weight: 700;
+}
+
+/* 선택된 1차 탭 메뉴 하단 선 */
+#sec-facilities .tab-menu>li.on::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #111;
+}
+
+/* 1차 탭 콘텐츠 */
+#sec-facilities .tab-contents>.tab-cont {
+    display: none;
+}
+
+#sec-facilities .tab-contents>.tab-cont.on {
+    display: block;
+}
+
+/* 1차 탭 콘텐츠 제목 */
+#sec-facilities .tab-cont>h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#sec-facilities .tab-cont>.sub-text {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 1.7;
+    word-break: keep-all;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*  2차 탭메뉴 - 석촌/몽촌/주막 */
+#sec-facilities .sub-tab-menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+#sec-facilities .sub-tab-menu>li>button {
+    padding: 14px 22px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#sec-facilities .sub-tab-menu>li>button:hover {
+    border-color: #111;
+}
+
+#sec-facilities .sub-tab-menu>li.on>button {
+    background: #111;
+    border-color: #111;
+    color: #fff;
+}
+
+/* 2차 탭 콘텐츠 */
+#sec-facilities .sub-tab-cont {
+    display: none;
+}
+
+#sec-facilities .sub-tab-cont.on {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 48px;
+}
+
+#sec-facilities .sub-tab-cont>.pic {
+    height: 440px;
+    overflow: hidden;
+}
+
+#sec-facilities .sub-tab-cont>.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sec-facilities .title-area {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+#sec-facilities .title-area .title {
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+#sec-facilities .title-area .sub-title {
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #008473;
+
+}
+
+#sec-facilities .text-area {
+    padding-top: 30px;
+}
+
+#sec-facilities .text-area .text {
+    margin-bottom: 35px;
+    line-height: 1.7;
+    word-break: keep-all;
+}
+
+#sec-facilites .sub-tab-cont dl>div+div {
+    margin-top: 25px;
+}
+
+#sec-facilities .sub-tab-cont dt {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#sec-facilities .sub-tab-cont dt>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e8e8e8;
+}
+
+#sec-facilities .sub-tab-cont dt>span img {
+    width: 18px;
+    height: 18px;
+}
+
+#sec-facilities .sub-tab-cont dd {
+    margin-left: 48px;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* 민속기념품점 */
+#sec-facilities .suv_contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 60px;
+}
+
+#sec-facilities .suv {
+    position: relative;
+    min-height: 400px;
+    padding: 35px;
+    overflow: hidden;
+    background: no-repeat center/cover;
+}
+
+#sec-facilities .suv.suv01 {
+    background-image: url(../img/sub/img-souvenior01.jpg);
+}
+
+#sec-facilities .suv.suv02 {
+    background-image: url(../img/sub/img-souvenior02.jpg);
+}
+
+/* 배경이미지 위 그라데이션 */
+#sec-facilities .suv::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.05)65%);
+}
+
+#sec-facilities .suv .text-group {
+    position: absolute;
+    left: 35px;
+    right: 35px;
+    bottom: 35px;
+    z-index: 1;
+    color: #fff;
+}
+
+#sec-facilities .suv .title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#sec-facilities .suv .text {
+    margin-bottom: 22px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+#sec-facilities .suv img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: -5px;
+}
+
+/* ======================================footer ===================================*/
+footer .inner {
+    padding-block: clamp(3rem, 5.5vw, 6rem);
+}
+
+footer .foot-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer .foot-left .f-logo {
+    display: block;
+    margin-bottom: 7rem;
+}
+
+.foot-left dl {
+    margin-bottom: 3rem;
+}
+
+.foot-left dl dt {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.foot-left dl dd p {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.foot-left .copy {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+footer .foot-right {
+    text-align: right;
+}
+
+.foot-right .foot-nav {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.foot-right .foot-nav li {
+    margin-left: 2rem;
+}
+
+.foot-right .foot-nav li a {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.foot-right .foot-nav .point {
+    color: #7a46be;
+    font-weight: 500;
+}
+
+.foot-right .sns {
+    margin-bottom: 5rem;
+}
+
+.foot-right .sns a {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.foot-right dl {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 25%;
+}
+
+.foot-right dl div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.foot-right dl img {
+    width: 50px
+}
+
+.foot-right dl dd {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
